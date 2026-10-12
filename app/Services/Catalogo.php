@@ -49,7 +49,10 @@ class Catalogo
         $anio = fn ($v) => is_numeric($v) && $v >= 1970 && $v <= 2100 ? (int) $v : null;
         $mc = is_numeric($in['mc'] ?? null) ? max(0, min(100, (int) $in['mc'])) : null;
 
+        $o = in_array($in['o'] ?? '', ['valoracion', 'anio', 'nombre'], true) ? $in['o'] : '';
+
         return [
+            'o' => $o,
             'g' => $gen,
             'p' => $plat,
             'desde' => $anio($in['desde'] ?? null),
@@ -60,7 +63,7 @@ class Catalogo
 
     public static function hayFiltros(array $f): bool
     {
-        return $f['g'] || $f['p'] || $f['desde'] || $f['hasta'] || $f['mc'];
+        return $f['g'] || $f['p'] || $f['desde'] || $f['hasta'] || $f['mc'] || $f['o'];
     }
 
     public function buscarLocal(string $q, array $f = [], int $limit = 24): Collection
@@ -102,8 +105,14 @@ class Catalogo
             $query->where('metacritic', '>=', $f['mc']);
         }
 
+        match ($f['o']) {
+            'valoracion' => $query->orderByRaw('metacritic is null')->orderByDesc('metacritic')->orderByDesc('rawg_rating'),
+            'anio' => $query->orderByRaw('released is null')->orderByDesc('released'),
+            'nombre' => $query->orderBy('name'),
+            default => $query->orderByDesc('ratings_count'),
+        };
+
         return $query
-            ->orderByDesc('ratings_count')
             ->limit($limit)
             ->get();
     }
@@ -132,6 +141,9 @@ class Catalogo
                     $params['search_precise'] = 'true';
                 } else {
                     $params['ordering'] = '-added';
+                }
+                if ($f['o']) {
+                    $params['ordering'] = ['valoracion' => '-metacritic', 'anio' => '-released', 'nombre' => 'name'][$f['o']];
                 }
                 if ($f['g']) {
                     $params['genres'] = implode(',', array_map(fn ($e) => self::GENEROS[$e][1], $f['g']));
