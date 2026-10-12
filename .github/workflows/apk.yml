@@ -1,0 +1,57 @@
+name: apk
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/apk.yml'
+permissions:
+  contents: write
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: preparar proyecto android
+        run: |
+          mkdir -p movil/www && cd movil
+          cat > package.json <<'JSON'
+          {"name":"ludoteca-movil","private":true,"version":"1.0.0"}
+          JSON
+          npm i @capacitor/core @capacitor/cli @capacitor/android
+          cat > capacitor.config.json <<'JSON'
+          {
+            "appId": "app.ludoteca.movil",
+            "appName": "Ludoteca",
+            "webDir": "www",
+            "backgroundColor": "#0b0d13",
+            "server": { "url": "https://ludoteca-ritr.onrender.com", "cleartext": false },
+            "android": { "backgroundColor": "#0b0d13" }
+          }
+          JSON
+          echo '<!doctype html><title>Ludoteca</title><body style="background:#0b0d13">' > www/index.html
+          npx cap add android
+          npx cap sync android
+          for d in mdpi:48 hdpi:72 xhdpi:96 xxhdpi:144 xxxhdpi:192; do
+            dir=android/app/src/main/res/mipmap-${d%%:*}
+            for n in ic_launcher ic_launcher_round ic_launcher_foreground; do
+              convert ../public/icons/icon-512.png -resize ${d##*:}x${d##*:} $dir/$n.png
+            done
+          done
+          rm -rf android/app/src/main/res/mipmap-anydpi-v26
+      - name: compilar apk
+        working-directory: movil/android
+        run: ./gradlew assembleDebug --no-daemon
+      - name: publicar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp movil/android/app/build/outputs/apk/debug/app-debug.apk ludoteca.apk
+          gh release delete apk -y --cleanup-tag || true
+          gh release create apk ludoteca.apk --title "App Android" --notes "APK de Ludoteca para instalar en Android."
