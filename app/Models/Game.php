@@ -49,6 +49,12 @@ class Game extends Model
         return $this->released !== null && $this->released->isFuture();
     }
 
+    /** Nota de la crítica: Metacritic y, si falta, OpenCritic. Nunca la de usuarios. */
+    public function critica(): ?int
+    {
+        return $this->metacritic ?? $this->opencritic_score;
+    }
+
     public function year(): ?int
     {
         return $this->released?->year;
