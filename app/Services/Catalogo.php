@@ -66,8 +66,11 @@ class Catalogo
         return $f['g'] || $f['p'] || $f['desde'] || $f['hasta'] || $f['mc'] || $f['o'];
     }
 
-    public function buscarLocal(string $q, array $f = [], int $limit = 24): Collection
+    public bool $hayMas = false;
+
+    public function buscarLocal(string $q, array $f = [], int $pagina = 1, int $limit = 24): Collection
     {
+        $this->hayMas = false;
         $q = $this->normalizar($q);
         $f = self::filtros($f);
         if ($q === '' && ! self::hayFiltros($f)) {
@@ -112,29 +115,35 @@ class Catalogo
             default => $query->orderByDesc('ratings_count'),
         };
 
-        return $query
-            ->limit($limit)
+        $juegos = $query
+            ->offset(($pagina - 1) * $limit)
+            ->limit($limit + 1)
             ->get();
+        $this->hayMas = $juegos->count() > $limit;
+
+        return $juegos->take($limit)->values();
     }
 
     /**
      * @return Collection<int, Game>|null null si RAWG no responde
      */
-    public function buscarRemoto(string $q, array $f = [], int $limit = 20): ?Collection
+    public function buscarRemoto(string $q, array $f = [], int $pagina = 1, int $limit = 40): ?Collection
     {
+        $this->hayMas = false;
         $q = $this->normalizar($q);
         $f = self::filtros($f);
         if ((mb_strlen($q) < 2 && ! self::hayFiltros($f)) || ! config('services.rawg.key')) {
             return null;
         }
 
-        $clave = 'rawg:buscar:'.md5($q.json_encode($f));
+        $clave = 'rawg:v2:'.md5($q.json_encode($f).'|'.$pagina);
         $resultados = Cache::get($clave);
         if ($resultados === null) {
             try {
                 $params = [
                     'key' => config('services.rawg.key'),
                     'page_size' => $limit,
+                    'page' => $pagina,
                 ];
                 if ($q !== '') {
                     $params['search'] = $q;
@@ -161,7 +170,7 @@ class Catalogo
                 if (! $resp->successful()) {
                     return null;
                 }
-                $resultados = $resp->json('results') ?? [];
+                $resultados = ['items' => $resp->json('results') ?? [], 'mas' => ! empty($resp->json('next'))];
                 Cache::put($clave, $resultados, now()->addDay());
             } catch (\Throwable $e) {
                 Log::info('RAWG no responde: '.$e->getMessage());
@@ -170,7 +179,9 @@ class Catalogo
             }
         }
 
-        return collect($resultados)
+        $this->hayMas = (bool) ($resultados['mas'] ?? false);
+
+        return collect($resultados['items'] ?? [])
             ->filter(fn ($g) => ! empty($g['background_image']))
             ->map(fn ($g) => $this->guardar($g))
             ->values();
