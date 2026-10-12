@@ -5,14 +5,16 @@ namespace App\Http\Controllers;
 use App\Models\Entry;
 use App\Models\Game;
 use App\Services\Catalogo;
+use App\Services\OpenCritic;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
 class JuegoController extends Controller
 {
-    public function show(Game $game, Catalogo $catalogo)
+    public function show(Game $game, Catalogo $catalogo, OpenCritic $opencritic)
     {
         $catalogo->detallar($game);
+        $opencritic->completar($game);
 
         $stats = Entry::where('game_id', $game->id)->whereNotNull('rating')
             ->selectRaw('avg(rating) as media, count(*) as votos')->first();
