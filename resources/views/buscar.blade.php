@@ -69,6 +69,10 @@
             </template>
         </div>
 
+        <div x-show="items.length && (mas.local || mas.remoto)" x-cloak class="mt-5 text-center">
+            <button type="button" @click="cargarMas()" :disabled="cargandoMas" class="btn-ghost w-full" x-text="cargandoMas ? 'Cargando…' : 'Cargar más juegos'"></button>
+        </div>
+
         <p x-show="buscado && !items.length && !cargandoRemoto" x-cloak class="text-center text-muted mt-10">Sin resultados para «<span x-text="q"></span>».</p>
         <p x-show="!buscado && q.length < 2 && !activos" class="text-center text-muted mt-10">Escribe al menos 2 letras o elige un filtro. Los resultados guardados salen al instante.</p>
     </div>
