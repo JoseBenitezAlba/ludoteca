@@ -10,7 +10,10 @@ class BuscarController extends Controller
 {
     public function index()
     {
-        return view('buscar');
+        return view('buscar', [
+            'generos' => array_keys(Catalogo::GENEROS),
+            'plataformas' => array_keys(Catalogo::PLATAFORMAS),
+        ]);
     }
 
     /** src=local responde al instante; src=remoto consulta RAWG con timeout corto. */
@@ -19,7 +22,8 @@ class BuscarController extends Controller
         $q = trim((string) $request->query('q', ''));
         $src = $request->query('src', 'local');
 
-        $juegos = $src === 'remoto' ? $catalogo->buscarRemoto($q) : $catalogo->buscarLocal($q);
+        $f = $request->query();
+        $juegos = $src === 'remoto' ? $catalogo->buscarRemoto($q, $f) : $catalogo->buscarLocal($q, $f);
         if ($juegos === null) {
             return response()->json(['ok' => false, 'items' => []]);
         }
