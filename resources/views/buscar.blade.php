@@ -9,6 +9,14 @@
 
         <div x-show="abierto" x-cloak x-transition class="card p-4 mb-3 space-y-4">
             <div>
+                <p class="text-xs font-bold text-muted mb-2">Ordenar por</p>
+                <div class="flex flex-wrap gap-2">
+                    @foreach (['valoracion' => 'Valoración', 'anio' => 'Año (nuevos)', 'nombre' => 'Nombre A-Z'] as $k => $et)
+                        <button type="button" @click="ordenar('{{ $k }}')" :class="o === '{{ $k }}' ? 'text-white border-accent bg-accent/25' : 'text-muted border-line bg-surface-2'" class="chip !text-sm !px-3 !py-1.5 border">{{ $et }}</button>
+                    @endforeach
+                </div>
+            </div>
+            <div>
                 <p class="text-xs font-bold text-muted mb-2">Género</p>
                 <div class="flex flex-wrap gap-2">
                     @foreach ($generos as $g)
