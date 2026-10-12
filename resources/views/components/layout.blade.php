@@ -25,7 +25,7 @@
         ['perfil', 'Stats', '/perfil', 'M4 20V10h4v10zM10 20V4h4v16zM16 20v-7h4v7z'],
     ];
 @endphp
-<header class="sticky top-0 z-30 bg-bg/85 backdrop-blur border-b border-line">
+<header class="sticky top-0 z-30 bg-bg/85 backdrop-blur border-b border-line" x-data="{ lupa: false }" @keydown.escape.window="lupa = false">
     <div class="max-w-5xl mx-auto px-4 h-14 flex items-center gap-4">
         <a href="/" class="font-extrabold text-xl tracking-tight flex items-center gap-2">
             <span class="w-7 h-7 rounded-lg grid place-items-center text-sm" style="background:linear-gradient(135deg,#8b5cf6,#22d3ee)">L</span>
@@ -38,6 +38,9 @@
             @auth <a href="/listas" class="px-3 py-1.5 rounded-lg {{ $nav === 'listas' ? 'bg-surface-2 text-white' : 'text-muted hover:text-white' }}">Listas</a> @endauth
         </nav>
         <div class="ml-auto flex items-center gap-2">
+            <button type="button" @click="lupa = true; $nextTick(() => $refs.q.focus())" aria-label="Buscar un juego" class="w-9 h-9 grid place-items-center rounded-full text-muted hover:text-white active:scale-95">
+                <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M11 4a7 7 0 1 0 4.2 12.6l4.1 4.1 1.4-1.4-4.1-4.1A7 7 0 0 0 11 4zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10z"/></svg>
+            </button>
             @auth
                 <a href="{{ route('perfil.propio') }}" class="w-8 h-8 rounded-full grid place-items-center text-sm font-bold bg-surface-2 border border-line">{{ mb_strtoupper(mb_substr(auth()->user()->name, 0, 1)) }}</a>
                 <form method="post" action="{{ route('salir') }}">@csrf<button class="text-xs text-muted hover:text-white px-2">Salir</button></form>
@@ -47,6 +50,13 @@
             @endauth
         </div>
     </div>
+    <form x-show="lupa" x-cloak x-transition.opacity action="{{ route('buscar') }}" method="get" class="absolute inset-0 bg-bg border-b border-line">
+        <div class="max-w-5xl mx-auto px-4 h-14 flex items-center gap-2">
+            <input x-ref="q" type="search" name="q" placeholder="Busca un juego…" autocomplete="off" enterkeyhint="search" class="!rounded-xl !py-2 flex-1">
+            <button type="submit" class="btn-primary !py-2">Buscar</button>
+            <button type="button" @click="lupa = false" aria-label="Cerrar" class="w-9 h-9 grid place-items-center text-muted text-xl">✕</button>
+        </div>
+    </form>
 </header>
 
 <main class="max-w-5xl mx-auto px-4 py-5">
