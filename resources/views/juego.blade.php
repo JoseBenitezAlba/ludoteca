@@ -56,9 +56,13 @@
             <input type="hidden" name="rating" :value="v || ''">
         </div>
 
-        <div class="grid grid-cols-2 gap-3" x-show="estado" x-cloak>
-            <label class="text-xs text-muted">Horas jugadas<input type="number" step="0.5" min="0" name="hours" value="{{ old('hours', $entry->hours ?? '') }}" placeholder="{{ $game->playtime ? '~'.$game->playtime : '0' }}"></label>
-            <label class="text-xs text-muted">Plataforma
+        <div x-show="estado" x-cloak x-data="{ mas: @js((bool) ($entry && ($entry->hours || $entry->platform || $entry->finished_at || $entry->review || $entry->favorite)) || $errors->any()) }">
+            <p class="text-xs text-muted">Con el estado y la nota ya vale. Lo demás es opcional.</p>
+            <button type="button" class="text-sm text-accent mt-2" @click="mas = !mas" x-text="mas ? 'Ocultar detalles' : 'Más detalles (opcional)'"></button>
+            <div x-show="mas" x-cloak class="space-y-3 mt-3">
+        <div class="grid grid-cols-2 gap-3">
+            <label class="text-xs text-muted">Horas jugadas (opcional)<input type="number" step="0.5" min="0" name="hours" value="{{ old('hours', $entry->hours ?? '') }}" placeholder="{{ $game->playtime ? '~'.$game->playtime : '0' }}"></label>
+            <label class="text-xs text-muted">Plataforma (opcional)
                 <select name="platform">
                     <option value="">–</option>
                     @foreach (collect(['PC', 'PS5', 'Xbox', 'Switch', 'Móvil'])->merge(array_slice($game->platforms ?? [], 0, 6))->unique() as $p)
@@ -66,13 +70,15 @@
                     @endforeach
                 </select>
             </label>
-            <label class="text-xs text-muted col-span-2" x-show="['completed','platinum'].includes(estado)">Fecha en que lo terminaste
+            <label class="text-xs text-muted col-span-2" x-show="['completed','platinum'].includes(estado)">Fecha en que lo terminaste (opcional)
                 <input type="date" name="finished_at" value="{{ old('finished_at', optional($entry?->finished_at)->format('Y-m-d')) }}">
             </label>
         </div>
-        <div x-show="estado" x-cloak class="space-y-3">
+        <div class="space-y-3">
             <textarea name="review" rows="3" maxlength="2000" placeholder="Tu opinión (opcional)">{{ old('review', $entry->review ?? '') }}</textarea>
-            <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="favorite" value="1" @checked(old('favorite', $entry->favorite ?? false)) class="!w-5 !h-5 accent-accent"> Marcar como favorito</label>
+            <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="favorite" value="1" @checked(old('favorite', $entry->favorite ?? false)) class="!w-5 !h-5 accent-accent"> Marcar como favorito (opcional)</label>
+        </div>
+            </div>
         </div>
         <div class="flex items-center gap-3">
             <button class="btn-primary flex-1" x-bind:disabled="!estado" x-bind:class="!estado && 'opacity-50'">Guardar</button>
@@ -85,7 +91,7 @@
     @if ($listas->isNotEmpty())
         <form method="post" action="{{ route('listas.agregar', $game) }}" class="card p-3 mt-3 flex gap-2">
             @csrf
-            <select name="lista" class="!w-auto flex-1">@foreach ($listas as $l)<option value="{{ $l->id }}">{{ $l->name }}</option>@endforeach</select>
+            <select name="lista" class="!w-auto flex-1 min-w-0">@foreach ($listas as $l)<option value="{{ $l->id }}">{{ $l->name }}</option>@endforeach</select>
             <button class="btn-ghost shrink-0">+ Lista</button>
         </form>
     @endif
