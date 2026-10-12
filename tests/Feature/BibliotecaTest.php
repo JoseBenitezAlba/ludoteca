@@ -32,6 +32,17 @@ class BibliotecaTest extends TestCase
             ->assertOk()->assertJsonCount(1, 'items')->assertJsonPath('items.0.name', 'The Witcher 3');
     }
 
+    public function test_filtros_funcionan_en_el_catalogo_local(): void
+    {
+        $this->juego('Hades', ['genres' => ['Indie', 'RPG'], 'platforms' => ['PC', 'Nintendo Switch'], 'metacritic' => 93, 'released' => '2020-09-17']);
+        $this->juego('Viejo', ['genres' => ['Action'], 'platforms' => ['PC'], 'metacritic' => 70, 'released' => '2005-01-01']);
+
+        $this->getJson('/api/buscar?src=local&g[]=RPG&p[]=Switch&desde=2018&mc=90')
+            ->assertOk()->assertJsonCount(1, 'items')->assertJsonPath('items.0.name', 'Hades');
+        $this->getJson('/api/buscar?src=local&hasta=2010')
+            ->assertOk()->assertJsonCount(1, 'items')->assertJsonPath('items.0.name', 'Viejo');
+    }
+
     public function test_si_rawg_falla_la_busqueda_remota_no_rompe(): void
     {
         config(['services.rawg.key' => 'x']);
