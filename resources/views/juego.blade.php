@@ -30,16 +30,22 @@
           x-data="{ estado: @js(old('status', $entry->status ?? '')) }">
         @csrf
         <h2 class="h-section">{{ $entry ? 'En tu biblioteca' : 'Añadir a tu biblioteca' }}</h2>
+        @php $sinSalir = $game->sinLanzar(); @endphp
         <div class="flex flex-wrap gap-2">
             @foreach (\App\Models\Entry::STATUSES as $k => $label)
-                <label class="cursor-pointer">
-                    <input type="radio" name="status" value="{{ $k }}" x-model="estado" class="sr-only peer" required>
+                @php $bloqueado = $sinSalir && $k !== 'backlog'; @endphp
+                <label class="{{ $bloqueado ? 'opacity-40 cursor-not-allowed' : 'cursor-pointer' }}">
+                    <input type="radio" name="status" value="{{ $k }}" x-model="estado" class="sr-only peer" required @disabled($bloqueado)>
                     <span class="chip !text-sm !px-3.5 !py-2 bg-surface-2 border border-line text-muted peer-checked:text-white peer-checked:border-accent peer-checked:bg-accent/25">{{ $label }}</span>
                 </label>
             @endforeach
         </div>
+        @if ($sinSalir)
+            <p class="text-xs text-muted">Sale el {{ $game->released->translatedFormat('j \d\e F \d\e Y') }}. Hasta entonces solo puedes ponerlo en Pendiente.</p>
+        @endif
+        @error('status')<p class="text-sm text-red-400">{{ $message }}</p>@enderror
 
-        <div x-data="estrellas({{ $entry->rating ?? 0 }})" x-show="estado" x-cloak>
+        <div x-data="estrellas({{ $entry->rating ?? 0 }})" x-show="estado && !{{ $sinSalir ? 'true' : 'false' }}" x-cloak>
             <div class="flex items-center gap-3">
                 <div class="flex">
                     @for ($i = 1; $i <= 5; $i++)
@@ -56,7 +62,7 @@
             <input type="hidden" name="rating" :value="v || ''">
         </div>
 
-        <div x-show="estado" x-cloak x-data="{ mas: @js((bool) ($entry && ($entry->hours || $entry->platform || $entry->finished_at || $entry->review || $entry->favorite)) || $errors->any()) }">
+        <div x-show="estado && !{{ $sinSalir ? 'true' : 'false' }}" x-cloak x-data="{ mas: @js((bool) ($entry && ($entry->hours || $entry->platform || $entry->finished_at || $entry->review || $entry->favorite)) || $errors->any()) }">
             <p class="text-xs text-muted">Con el estado y la nota ya vale. Lo demás es opcional.</p>
             <button type="button" class="text-sm text-accent mt-2" @click="mas = !mas" x-text="mas ? 'Ocultar detalles' : 'Más detalles (opcional)'"></button>
             <div x-show="mas" x-cloak class="space-y-3 mt-3">
