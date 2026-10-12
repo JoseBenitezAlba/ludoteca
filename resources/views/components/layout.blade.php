@@ -20,6 +20,7 @@
     $tabs = [
         ['home', 'Inicio', '/', 'M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z'],
         ['buscar', 'Buscar', '/buscar', 'M11 4a7 7 0 1 0 4.2 12.6l4.1 4.1 1.4-1.4-4.1-4.1A7 7 0 0 0 11 4z'],
+        ['proximamente', 'Próximos', '/proximamente', 'M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3zM5 10v9h14v-9z'],
         ['biblioteca', 'Biblioteca', '/biblioteca', 'M4 4h4v16H4zM10 4h4v16h-4zM16.5 5.2l3.9-1 3 15.6-3.9 1z'],
         ['perfil', 'Stats', '/perfil', 'M4 20V10h4v10zM10 20V4h4v16zM16 20v-7h4v7z'],
     ];
@@ -57,7 +58,7 @@
 </main>
 
 <nav class="md:hidden fixed bottom-0 inset-x-0 z-30 bg-surface/95 backdrop-blur border-t border-line safe-bottom">
-    <div class="grid grid-cols-4">
+    <div class="grid grid-cols-5">
         @foreach ($tabs as [$k, $label, $url, $path])
             <a href="{{ $url }}" class="flex flex-col items-center gap-0.5 py-2.5 text-[11px] font-semibold {{ $nav === $k ? 'text-white' : 'text-muted' }}">
                 <svg viewBox="0 0 24 24" class="w-6 h-6 {{ $nav === $k ? 'text-accent' : '' }}" fill="currentColor"><path d="{{ $path }}"/></svg>
