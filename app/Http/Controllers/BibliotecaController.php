@@ -21,6 +21,9 @@ class BibliotecaController extends Controller
         $ordenados = match ($orden) {
             'nota' => $entries->sortByDesc(fn ($e) => $e->rating ?? 0),
             'nombre' => $entries->sortBy(fn ($e) => $e->game->name),
+            // por fecha de lanzamiento; los que no tienen fecha, siempre al final
+            'anio' => $entries->sort(fn ($a, $b) => $this->porFecha($a, $b, -1)),
+            'anio_asc' => $entries->sort(fn ($a, $b) => $this->porFecha($a, $b, 1)),
             default => $entries->sortByDesc('updated_at'),
         };
         $entries = $ordenados->values();
@@ -28,5 +31,16 @@ class BibliotecaController extends Controller
         $conteo = auth()->user()->entries()->selectRaw('status, count(*) as n')->groupBy('status')->pluck('n', 'status');
 
         return view('biblioteca', compact('entries', 'conteo', 'estado', 'orden'));
+    }
+
+    private function porFecha(Entry $a, Entry $b, int $sentido): int
+    {
+        $fa = $a->game->released?->getTimestamp();
+        $fb = $b->game->released?->getTimestamp();
+        if ($fa === null || $fb === null) {
+            return ($fa === null) <=> ($fb === null);
+        }
+
+        return ($fa <=> $fb) * $sentido;
     }
 }
