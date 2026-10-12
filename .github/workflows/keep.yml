@@ -1,0 +1,13 @@
+name: mantener despierta
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ping
+        run: |
+          curl -fsS -m 60 -o /dev/null -w "%{http_code} %{time_total}s\n" https://ludoteca-ritr.onrender.com/ || true
+          curl -fsS -m 60 -o /dev/null -w "%{http_code} %{time_total}s\n" "https://ludoteca-ritr.onrender.com/api/buscar?q=zelda&src=local" || true
