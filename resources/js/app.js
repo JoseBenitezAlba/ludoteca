@@ -13,6 +13,7 @@ Alpine.data('buscador', (inicial = '') => ({
     id: 0,
     abierto: false,
     f: { g: [], p: [], desde: '', hasta: '', mc: 0 },
+    o: '',
 
     init() {
         const u = new URLSearchParams(location.search);
@@ -21,12 +22,13 @@ Alpine.data('buscador', (inicial = '') => ({
         this.f.desde = u.get('desde') || '';
         this.f.hasta = u.get('hasta') || '';
         this.f.mc = parseInt(u.get('mc') || '0', 10) || 0;
+        this.o = u.get('o') || '';
         this.abierto = this.activos > 0;
         if (this.q || this.activos) this.lanzar();
     },
 
     get activos() {
-        return this.f.g.length + this.f.p.length + (this.f.desde ? 1 : 0) + (this.f.hasta ? 1 : 0) + (this.f.mc ? 1 : 0);
+        return this.f.g.length + this.f.p.length + (this.f.desde ? 1 : 0) + (this.f.hasta ? 1 : 0) + (this.f.mc ? 1 : 0) + (this.o ? 1 : 0);
     },
 
     alternar(lista, v) {
@@ -40,8 +42,24 @@ Alpine.data('buscador', (inicial = '') => ({
         this.lanzar();
     },
 
+    ordenar(o) {
+        this.o = this.o === o ? '' : o;
+        this.lanzar();
+    },
+
+    ordenados(lista) {
+        const num = (v, d) => (v === null || v === undefined ? d : v);
+        const por = {
+            valoracion: (a, b) => num(b.mc, -1) - num(a.mc, -1) || num(b.rating, -1) - num(a.rating, -1),
+            anio: (a, b) => (b.date || '').localeCompare(a.date || ''),
+            nombre: (a, b) => a.name.localeCompare(b.name, 'es'),
+        }[this.o];
+        return por ? [...lista].sort(por) : lista;
+    },
+
     limpiar() {
         this.f = { g: [], p: [], desde: '', hasta: '', mc: 0 };
+        this.o = '';
         this.lanzar();
     },
 
@@ -54,6 +72,7 @@ Alpine.data('buscador', (inicial = '') => ({
         if (this.f.desde) u.set('desde', this.f.desde);
         if (this.f.hasta) u.set('hasta', this.f.hasta);
         if (this.f.mc) u.set('mc', this.f.mc);
+        if (this.o) u.set('o', this.o);
         return u;
     },
 
@@ -85,7 +104,7 @@ Alpine.data('buscador', (inicial = '') => ({
         this.cargandoRemoto = true;
         pedir('local').then((d) => {
             if (id !== this.id) return;
-            this.items = d.items;
+            this.items = this.ordenados(d.items);
             this.buscado = true;
         }).catch(() => {});
 
@@ -93,7 +112,7 @@ Alpine.data('buscador', (inicial = '') => ({
             if (id !== this.id) return;
             if (!d.ok) { this.remotoFallo = true; return; }
             const vistos = new Set(this.items.map((i) => i.slug));
-            this.items = [...this.items, ...d.items.filter((i) => !vistos.has(i.slug))];
+            this.items = this.ordenados([...this.items, ...d.items.filter((i) => !vistos.has(i.slug))]);
             this.buscado = true;
         }).catch((e) => {
             if (e.name !== 'AbortError' && id === this.id) this.remotoFallo = true;
