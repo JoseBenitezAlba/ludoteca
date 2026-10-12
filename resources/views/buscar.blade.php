@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div>
-                <p class="text-xs font-bold text-muted mb-2">Metacritic mínimo</p>
+                <p class="text-xs font-bold text-muted mb-2">Nota de la crítica mínima (Metacritic u OpenCritic)</p>
                 <div class="flex flex-wrap gap-2">
                     @foreach ([60, 75, 85, 90] as $n)
                         <button type="button" @click="puntuar({{ $n }})" :class="f.mc === {{ $n }} ? 'text-white border-accent bg-accent/25' : 'text-muted border-line bg-surface-2'" class="chip !text-sm !px-3 !py-1.5 border">{{ $n }}+</button>
@@ -64,6 +64,7 @@
                     <div class="p-2.5">
                         <p class="text-sm font-bold leading-tight line-clamp-2 min-h-[2.2em]" x-text="g.name"></p>
                         <p class="text-xs text-muted mt-1" x-text="[g.year, g.genres.join(', ')].filter(Boolean).join(' · ')"></p>
+                        <p x-show="g.mc" class="text-[11px] text-muted mt-0.5"><span class="font-bold text-white" x-text="g.mc"></span> <span x-text="g.mcs === 'M' ? 'Metacritic' : 'OpenCritic'"></span></p>
                     </div>
                 </a>
             </template>
@@ -76,7 +77,7 @@
         <div x-show="buscado && !items.length && !cargandoRemoto" x-cloak class="text-center text-muted mt-10 space-y-2">
             <p x-show="q.trim()">Sin resultados para «<span x-text="q"></span>».</p>
             <p x-show="!q.trim()">Ningún juego con esos filtros.</p>
-            <p x-show="f.mc && (f.desde >= 2024 || f.hasta >= 2024)" class="text-xs">Ojo: el catálogo casi no tiene nota de Metacritic en los juegos de 2024 en adelante. Prueba sin Metacritic o con años anteriores.</p>
+            <p x-show="f.mc && (f.desde >= 2024 || f.hasta >= 2024)" class="text-xs">Ojo: en los juegos de 2024 en adelante la nota sale de OpenCritic y se va completando poco a poco, así que puede que aún falten.</p>
         </div>
         <p x-show="!buscado && q.length < 2 && !activos" class="text-center text-muted mt-10">Escribe al menos 2 letras o elige un filtro. Los resultados guardados salen al instante.</p>
     </div>
