@@ -14,6 +14,9 @@ Alpine.data('buscador', (inicial = '') => ({
     abierto: false,
     f: { g: [], p: [], desde: '', hasta: '', mc: 0 },
     o: '',
+    pagina: 1,
+    mas: { local: false, remoto: false },
+    cargandoMas: false,
 
     init() {
         const u = new URLSearchParams(location.search);
@@ -94,9 +97,14 @@ Alpine.data('buscador', (inicial = '') => ({
         const base = this.params();
         history.replaceState(null, '', '?' + base.toString());
 
-        const pedir = async (src) => {
+        this.pagina = 1;
+        this.mas = { local: false, remoto: false };
+        this.cargandoMas = false;
+
+        const pedir = async (src, pag = 1) => {
             const u = new URLSearchParams(base);
             u.set('src', src);
+            u.set('page', pag);
             const r = await fetch('/api/buscar?' + u.toString(), { signal, headers: { Accept: 'application/json' } });
             return r.json();
         };
@@ -105,12 +113,14 @@ Alpine.data('buscador', (inicial = '') => ({
         pedir('local').then((d) => {
             if (id !== this.id) return;
             this.items = this.ordenados(d.items);
+            this.mas.local = !!d.more;
             this.buscado = true;
         }).catch(() => {});
 
         pedir('remoto').then((d) => {
             if (id !== this.id) return;
             if (!d.ok) { this.remotoFallo = true; return; }
+            this.mas.remoto = !!d.more;
             const vistos = new Set(this.items.map((i) => i.slug));
             this.items = this.ordenados([...this.items, ...d.items.filter((i) => !vistos.has(i.slug))]);
             this.buscado = true;
@@ -119,6 +129,26 @@ Alpine.data('buscador', (inicial = '') => ({
         }).finally(() => {
             if (id === this.id) this.cargandoRemoto = false;
         });
+        this.pedirPagina = pedir;
+    },
+
+    async cargarMas() {
+        if (this.cargandoMas || !this.pedirPagina) return;
+        const id = this.id;
+        this.cargandoMas = true;
+        const pag = ++this.pagina;
+        const tareas = [];
+        for (const src of ['local', 'remoto']) {
+            if (!this.mas[src]) continue;
+            tareas.push(this.pedirPagina(src, pag).then((d) => {
+                if (id !== this.id) return;
+                this.mas[src] = !!(d.ok && d.more);
+                const vistos = new Set(this.items.map((i) => i.slug));
+                this.items = this.ordenados([...this.items, ...d.items.filter((i) => !vistos.has(i.slug))]);
+            }).catch(() => { this.mas[src] = false; }));
+        }
+        await Promise.all(tareas);
+        if (id === this.id) this.cargandoMas = false;
     },
 }));
 
