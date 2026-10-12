@@ -166,7 +166,7 @@ class Catalogo
                 if ($f['mc']) {
                     $params['metacritic'] = $f['mc'].',100';
                 }
-                $resp = Http::timeout(4)->connectTimeout(2)->get(self::BASE.'/games', $params);
+                $resp = Http::timeout(self::hayFiltros($f) ? 10 : 4)->connectTimeout(3)->get(self::BASE.'/games', $params);
                 if (! $resp->successful()) {
                     return null;
                 }
