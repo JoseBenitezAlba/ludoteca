@@ -23,7 +23,8 @@ class BuscarController extends Controller
         $src = $request->query('src', 'local');
 
         $f = $request->query();
-        $juegos = $src === 'remoto' ? $catalogo->buscarRemoto($q, $f) : $catalogo->buscarLocal($q, $f);
+        $pagina = max(1, min(50, (int) $request->query('page', 1)));
+        $juegos = $src === 'remoto' ? $catalogo->buscarRemoto($q, $f, $pagina) : $catalogo->buscarLocal($q, $f, $pagina);
         if ($juegos === null) {
             return response()->json(['ok' => false, 'items' => []]);
         }
@@ -34,6 +35,7 @@ class BuscarController extends Controller
 
         return response()->json([
             'ok' => true,
+            'more' => $catalogo->hayMas,
             'items' => $juegos->map(fn ($g) => [
                 'slug' => $g->slug,
                 'name' => $g->name,
