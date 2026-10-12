@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    --color-bg: #0b0d13;
+    --color-surface: #141824;
+    --color-surface-2: #1c2132;
+    --color-line: #272d40;
+    --color-ink: #e9ebf3;
+    --color-muted: #8d95aa;
+    --color-accent: #8b5cf6;
+    --color-accent-2: #22d3ee;
+    --color-playing: #22d3ee;
+    --color-backlog: #94a3b8;
+    --color-completed: #34d399;
+    --color-platinum: #fbbf24;
+    --color-abandoned: #fb7185;
+}
+
+@layer base {
+    html { background: var(--color-bg); -webkit-tap-highlight-color: transparent; }
+    body { @apply bg-bg text-ink font-sans antialiased; min-height: 100dvh; }
+    [x-cloak] { display: none !important; }
+    input, select, textarea { @apply bg-surface-2 border border-line rounded-xl px-3.5 py-2.5 text-ink w-full text-base outline-none; }
+    input:focus, select:focus, textarea:focus { @apply border-accent; }
+    input[type=checkbox] { @apply w-auto; }
+    ::placeholder { color: var(--color-muted); }
+}
+
+@layer components {
+    .btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 font-semibold text-sm transition active:scale-[.98]; }
+    .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 font-semibold text-sm transition active:scale-[.98] text-white; background: linear-gradient(135deg, #8b5cf6, #6366f1); }
+    .btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 font-semibold text-sm transition active:scale-[.98] bg-surface-2 border border-line text-ink; }
+    .btn-danger { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 font-semibold text-sm transition text-abandoned bg-transparent; }
+    .card { @apply bg-surface border border-line rounded-2xl; }
+    .chip { @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold; }
+    .h-section { @apply text-lg font-extrabold tracking-tight; }
+    .scroll-x { @apply flex gap-3 overflow-x-auto snap-x -mx-4 px-4 pb-2; scrollbar-width: none; }
+    .scroll-x::-webkit-scrollbar { display: none; }
+}
+
+.stars-base, .stars-fill { letter-spacing: .06em; line-height: 1; }
+.stars-base { color: #323a52; }
+.stars-fill { color: #fbbf24; position: absolute; inset: 0 auto 0 0; overflow: hidden; white-space: nowrap; }
+.safe-bottom { padding-bottom: max(env(safe-area-inset-bottom), 0px); }
