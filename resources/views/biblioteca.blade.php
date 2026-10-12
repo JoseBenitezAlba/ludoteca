@@ -11,8 +11,14 @@
     </div>
     <div class="flex gap-2 text-xs text-muted mb-4">
         <span>Ordenar:</span>
-        @foreach (['reciente' => 'Recientes', 'nota' => 'Nota', 'nombre' => 'A-Z'] as $k => $l)
-            <a href="{{ route('biblioteca', array_filter(['estado' => $estado, 'orden' => $k])) }}" class="{{ $orden === $k ? 'text-white font-bold' : '' }}">{{ $l }}</a>
+        @foreach (['reciente' => 'Recientes', 'nota' => 'Nota', 'nombre' => 'A-Z', 'anio' => 'Año'] as $k => $l)
+            @php
+                $activo = $k === 'anio' ? in_array($orden, ['anio', 'anio_asc'], true) : $orden === $k;
+                // tocar "Año" estando activo alterna entre más nuevos primero y más antiguos primero
+                $destino = $k === 'anio' && $orden === 'anio' ? 'anio_asc' : $k;
+                $flecha = $k === 'anio' && $activo ? ($orden === 'anio_asc' ? ' ↑' : ' ↓') : '';
+            @endphp
+            <a href="{{ route('biblioteca', array_filter(['estado' => $estado, 'orden' => $destino])) }}" class="{{ $activo ? 'text-white font-bold' : '' }}">{{ $l }}{{ $flecha }}</a>
         @endforeach
     </div>
 
