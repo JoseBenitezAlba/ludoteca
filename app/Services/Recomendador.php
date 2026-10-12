@@ -123,7 +123,9 @@ class Recomendador
         $es = array_combine(array_map(fn ($v) => $v[0], Catalogo::GENEROS), array_keys(Catalogo::GENEROS));
         $comunes = array_values(array_intersect((array) $g->genres, $elegidos));
         if ($conPerfil && $comunes) {
-            return 'Por lo que juegas: '.($es[$comunes[0]] ?? $comunes[0]) === 'RPG' ? 'RPG' : mb_strtolower($es[$comunes[0]] ?? $comunes[0]);
+            $nombre = $es[$comunes[0]] ?? $comunes[0];
+
+            return 'Por lo que juegas: '.($nombre === 'RPG' ? 'RPG' : mb_strtolower($nombre));
         }
 
         return $g->rawg_rating && $g->rawg_rating >= 4 ? 'Muy bien valorado' : 'Popular';
