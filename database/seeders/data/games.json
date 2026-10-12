@@ -1,0 +1,3973 @@
+[
+ {
+  "rawg_id": 3328,
+  "slug": "the-witcher-3-wild-hunt",
+  "name": "The Witcher 3: Wild Hunt",
+  "image": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg",
+  "released": "2015-05-18",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch",
+   "macOS"
+  ],
+  "metacritic": 92,
+  "rating": 4.64,
+  "ratings_count": 7289,
+  "playtime": 43
+ },
+ {
+  "rawg_id": 324997,
+  "slug": "baldurs-gate-3",
+  "name": "Baldur's Gate III",
+  "image": "https://media.rawg.io/media/games/699/69907ecf13f172e9e144069769c3be73.jpg",
+  "released": "2023-08-03",
+  "genres": [
+   "Strategy",
+   "Adventure",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox Series S/X",
+   "macOS"
+  ],
+  "metacritic": 97,
+  "rating": 4.43,
+  "ratings_count": 1074,
+  "playtime": 20
+ },
+ {
+  "rawg_id": 41494,
+  "slug": "cyberpunk-2077",
+  "name": "Cyberpunk 2077",
+  "image": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg",
+  "released": "2020-12-10",
+  "genres": [
+   "Shooter",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": 73,
+  "rating": 4.23,
+  "ratings_count": 3063,
+  "playtime": 29
+ },
+ {
+  "rawg_id": 326243,
+  "slug": "elden-ring",
+  "name": "Elden Ring",
+  "image": "https://media.rawg.io/media/games/b29/b294fdd866dcdb643e7bab370a552855.jpg",
+  "released": "2022-02-25",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X"
+  ],
+  "metacritic": 95,
+  "rating": 4.38,
+  "ratings_count": 1503,
+  "playtime": 62
+ },
+ {
+  "rawg_id": 274755,
+  "slug": "hades-2018",
+  "name": "Hades",
+  "image": "https://media.rawg.io/media/games/1f4/1f47a270b8f241e4676b14d39ec620f7.jpg",
+  "released": "2020-09-17",
+  "genres": [
+   "Indie",
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": 93,
+  "rating": 4.41,
+  "ratings_count": 2124,
+  "playtime": 10
+ },
+ {
+  "rawg_id": 9767,
+  "slug": "hollow-knight",
+  "name": "Hollow Knight",
+  "image": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg",
+  "released": "2017-02-23",
+  "genres": [
+   "Platformer",
+   "Indie",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 88,
+  "rating": 4.4,
+  "ratings_count": 2778,
+  "playtime": 7
+ },
+ {
+  "rawg_id": 22121,
+  "slug": "celeste",
+  "name": "Celeste",
+  "image": "https://media.rawg.io/media/games/594/59487800889ebac294c7c2c070d02356.jpg",
+  "released": "2018-01-25",
+  "genres": [
+   "Platformer",
+   "Indie"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 91,
+  "rating": 4.37,
+  "ratings_count": 1714,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 654,
+  "slug": "stardew-valley",
+  "name": "Stardew Valley",
+  "image": "https://media.rawg.io/media/games/713/713269608dc8f2f40f5a670a14b2de94.jpg",
+  "released": "2016-02-25",
+  "genres": [
+   "Indie",
+   "RPG",
+   "Simulation"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "iOS",
+   "Android",
+   "macOS",
+   "Linux",
+   "PS Vita"
+  ],
+  "metacritic": 89,
+  "rating": 4.39,
+  "ratings_count": 2485,
+  "playtime": 13
+ },
+ {
+  "rawg_id": 28,
+  "slug": "red-dead-redemption-2",
+  "name": "Red Dead Redemption 2",
+  "image": "https://media.rawg.io/media/games/511/5118aff5091cb3efec399c808f8c598f.jpg",
+  "released": "2018-10-26",
+  "genres": [
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4"
+  ],
+  "metacritic": 96,
+  "rating": 4.59,
+  "ratings_count": 5580,
+  "playtime": 21
+ },
+ {
+  "rawg_id": 3498,
+  "slug": "grand-theft-auto-v",
+  "name": "Grand Theft Auto V",
+  "image": "https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg",
+  "released": "2013-09-17",
+  "genres": [
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Xbox 360",
+   "PlayStation 3"
+  ],
+  "metacritic": 92,
+  "rating": 4.47,
+  "ratings_count": 7451,
+  "playtime": 74
+ },
+ {
+  "rawg_id": 22511,
+  "slug": "the-legend-of-zelda-breath-of-the-wild",
+  "name": "The Legend of Zelda: Breath of the Wild",
+  "image": "https://media.rawg.io/media/games/cc1/cc196a5ad763955d6532cdba236f730c.jpg",
+  "released": "2017-03-03",
+  "genres": [
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "Nintendo Switch",
+   "Wii U"
+  ],
+  "metacritic": 97,
+  "rating": 4.47,
+  "ratings_count": 3230,
+  "playtime": 121
+ },
+ {
+  "rawg_id": 327239,
+  "slug": "the-legend-of-zelda-breath-of-the-wild-sequel",
+  "name": "The Legend of Zelda: Tears of the Kingdom",
+  "image": "https://media.rawg.io/media/games/556/55684bfd048706f4266d331d70050b37.jpg",
+  "released": "2023-05-12",
+  "genres": [
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "Nintendo Switch"
+  ],
+  "metacritic": 96,
+  "rating": 4.37,
+  "ratings_count": 508,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 58175,
+  "slug": "god-of-war-2",
+  "name": "God of War (2018)",
+  "image": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg",
+  "released": "2018-04-20",
+  "genres": [
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 4"
+  ],
+  "metacritic": 94,
+  "rating": 4.54,
+  "ratings_count": 5221,
+  "playtime": 15
+ },
+ {
+  "rawg_id": 494384,
+  "slug": "god-of-war-ragnarok",
+  "name": "God of War: Ragnarök",
+  "image": "https://media.rawg.io/media/games/1c3/1c305096502c475c00276c827f0fd697.jpg",
+  "released": "2022-11-09",
+  "genres": [
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "PlayStation 4"
+  ],
+  "metacritic": null,
+  "rating": 4.42,
+  "ratings_count": 813,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 51325,
+  "slug": "the-last-of-us-part-2",
+  "name": "The Last of Us Part II",
+  "image": "https://media.rawg.io/media/games/909/909974d1c7863c2027241e265fe7011f.jpg",
+  "released": "2020-06-19",
+  "genres": [
+   "Shooter",
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PlayStation 5",
+   "PlayStation 4"
+  ],
+  "metacritic": 93,
+  "rating": 4.41,
+  "ratings_count": 2057,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 50738,
+  "slug": "death-stranding",
+  "name": "Death Stranding",
+  "image": "https://media.rawg.io/media/games/2ad/2ad87a4a69b1104f02435c14c5196095.jpg",
+  "released": "2019-11-08",
+  "genres": [
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 4"
+  ],
+  "metacritic": 84,
+  "rating": 4.31,
+  "ratings_count": 2120,
+  "playtime": 11
+ },
+ {
+  "rawg_id": 622492,
+  "slug": "forza-horizon-5",
+  "name": "Forza Horizon 5",
+  "image": "https://media.rawg.io/media/games/082/082365507ff04d456c700157072d35db.jpg",
+  "released": "2021-11-08",
+  "genres": [
+   "Racing",
+   "Arcade"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "Xbox Series S/X",
+   "iOS"
+  ],
+  "metacritic": null,
+  "rating": 4.28,
+  "ratings_count": 782,
+  "playtime": 15
+ },
+ {
+  "rawg_id": 58753,
+  "slug": "forza-horizon-4",
+  "name": "Forza Horizon 4",
+  "image": "https://media.rawg.io/media/games/786/7863e587bac630de82fca50d799236a9.jpg",
+  "released": "2018-10-02",
+  "genres": [
+   "Racing",
+   "Arcade"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "Xbox Series S/X"
+  ],
+  "metacritic": 90,
+  "rating": 4.37,
+  "ratings_count": 1656,
+  "playtime": 13
+ },
+ {
+  "rawg_id": 494484,
+  "slug": "against-the-storm",
+  "name": "Against the Storm",
+  "image": "https://media.rawg.io/media/screenshots/c7d/c7df14c2f6efd2bb035aa89f7c7ca30a.jpg",
+  "released": "2023-12-08",
+  "genres": [
+   "Strategy",
+   "Simulation"
+  ],
+  "platforms": [
+   "PC"
+  ],
+  "metacritic": null,
+  "rating": 4.27,
+  "ratings_count": 80,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 479694,
+  "slug": "inscryption",
+  "name": "Inscryption",
+  "image": "https://media.rawg.io/media/games/73e/73efc5c0ac6f354271dae610276f617c.jpg",
+  "released": "2021-10-19",
+  "genres": [
+   "Indie",
+   "Strategy",
+   "Adventure"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 86,
+  "rating": 4.38,
+  "ratings_count": 611,
+  "playtime": 8
+ },
+ {
+  "rawg_id": 59359,
+  "slug": "a-plague-tale-innocence",
+  "name": "A Plague Tale: Innocence",
+  "image": "https://media.rawg.io/media/games/b4a/b4adf80c36e267b35acc3497ed2af19c.jpg",
+  "released": "2019-05-13",
+  "genres": [
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": 82,
+  "rating": 4.14,
+  "ratings_count": 1547,
+  "playtime": 7
+ },
+ {
+  "rawg_id": 2551,
+  "slug": "dark-souls-iii",
+  "name": "Dark Souls III",
+  "image": "https://media.rawg.io/media/games/da1/da1b267764d77221f07a4386b6548e5a.jpg",
+  "released": "2016-04-11",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4"
+  ],
+  "metacritic": 89,
+  "rating": 4.4,
+  "ratings_count": 2806,
+  "playtime": 29
+ },
+ {
+  "rawg_id": 50734,
+  "slug": "shadows-die-twice",
+  "name": "Sekiro: Shadows Die Twice",
+  "image": "https://media.rawg.io/media/games/67f/67f62d1f062a6164f57575e0604ee9f6.jpg",
+  "released": "2019-03-22",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4"
+  ],
+  "metacritic": 90,
+  "rating": 4.38,
+  "ratings_count": 2150,
+  "playtime": 16
+ },
+ {
+  "rawg_id": 3387,
+  "slug": "bloodborne",
+  "name": "Bloodborne",
+  "image": "https://media.rawg.io/media/games/214/214b29aeff13a0ae6a70fc4426e85991.jpg",
+  "released": "2015-03-24",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PlayStation 4"
+  ],
+  "metacritic": 92,
+  "rating": 4.41,
+  "ratings_count": 2464,
+  "playtime": 12
+ },
+ {
+  "rawg_id": 262382,
+  "slug": "disco-elysium",
+  "name": "Disco Elysium",
+  "image": "https://media.rawg.io/media/games/840/8408ad3811289a6a5830cae60fb0b62a.jpg",
+  "released": "2019-10-14",
+  "genres": [
+   "Indie",
+   "Adventure",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch",
+   "macOS"
+  ],
+  "metacritic": 91,
+  "rating": 4.36,
+  "ratings_count": 1369,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 4200,
+  "slug": "portal-2",
+  "name": "Portal 2",
+  "image": "https://media.rawg.io/media/games/2ba/2bac0e87cf45e5b508f227d281c9252a.jpg",
+  "released": "2011-04-18",
+  "genres": [
+   "Shooter",
+   "Puzzle"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "macOS",
+   "Linux",
+   "Xbox 360",
+   "PlayStation 3"
+  ],
+  "metacritic": 95,
+  "rating": 4.57,
+  "ratings_count": 6147,
+  "playtime": 11
+ },
+ {
+  "rawg_id": 13537,
+  "slug": "half-life-2",
+  "name": "Half-Life 2",
+  "image": "https://media.rawg.io/media/games/b8c/b8c243eaa0fbac8115e0cdccac3f91dc.jpg",
+  "released": "2004-11-16",
+  "genres": [
+   "Shooter",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Android",
+   "macOS",
+   "Linux",
+   "Xbox 360",
+   "Xbox"
+  ],
+  "metacritic": 96,
+  "rating": 4.47,
+  "ratings_count": 4129,
+  "playtime": 7
+ },
+ {
+  "rawg_id": 891238,
+  "slug": "hades-ii",
+  "name": "Hades II",
+  "image": "https://media.rawg.io/media/games/8fd/8fd2e8317849fd265ad8781c324d4ec2.jpg",
+  "released": "2025-09-25",
+  "genres": [
+   "Indie",
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": null,
+  "rating": 4.36,
+  "ratings_count": 143,
+  "playtime": 8
+ },
+ {
+  "rawg_id": 11726,
+  "slug": "dead-cells",
+  "name": "Dead Cells",
+  "image": "https://media.rawg.io/media/games/f90/f90ee1a4239247a822771c40488e68c5.jpg",
+  "released": "2018-08-07",
+  "genres": [
+   "Platformer",
+   "Indie",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "iOS",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 88,
+  "rating": 4.23,
+  "ratings_count": 1754,
+  "playtime": 10
+ },
+ {
+  "rawg_id": 28121,
+  "slug": "slay-the-spire",
+  "name": "Slay the Spire",
+  "image": "https://media.rawg.io/media/games/f52/f5206d55f918edf8ee07803101106fa6.jpg",
+  "released": "2019-01-22",
+  "genres": [
+   "Card",
+   "Strategy",
+   "Indie",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "iOS",
+   "Android",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 86,
+  "rating": 4.35,
+  "ratings_count": 1097,
+  "playtime": 12
+ },
+ {
+  "rawg_id": 977316,
+  "slug": "balatro",
+  "name": "Balatro",
+  "image": "https://media.rawg.io/media/games/821/821a40bd0cc0ac7dfb3fe97a7878dc1f.jpg",
+  "released": "2024-02-20",
+  "genres": [
+   "Casual",
+   "Strategy",
+   "Indie"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Nintendo Switch",
+   "iOS"
+  ],
+  "metacritic": null,
+  "rating": 4.29,
+  "ratings_count": 285,
+  "playtime": 14
+ },
+ {
+  "rawg_id": 685577,
+  "slug": "vampire-survivors",
+  "name": "Vampire Survivors",
+  "image": "https://media.rawg.io/media/games/501/501e7019925a3c692bf1c8062f07abe6.jpg",
+  "released": "2022-10-20",
+  "genres": [
+   "Casual",
+   "Indie",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "Nintendo Switch",
+   "iOS",
+   "Android",
+   "Web"
+  ],
+  "metacritic": null,
+  "rating": 4.19,
+  "ratings_count": 805,
+  "playtime": 11
+ },
+ {
+  "rawg_id": 422,
+  "slug": "terraria",
+  "name": "Terraria",
+  "image": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg",
+  "released": "2011-05-16",
+  "genres": [
+   "Platformer",
+   "Indie",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "iOS",
+   "Android",
+   "Nintendo 3DS",
+   "macOS",
+   "Linux",
+   "Xbox 360",
+   "PlayStation 3",
+   "PS Vita",
+   "Wii U"
+  ],
+  "metacritic": 81,
+  "rating": 4.08,
+  "ratings_count": 2482,
+  "playtime": 15
+ },
+ {
+  "rawg_id": 22509,
+  "slug": "minecraft",
+  "name": "Minecraft",
+  "image": "https://media.rawg.io/media/games/b4e/b4e4c73d5aa4ec66bbf75375c4847a2b.jpg",
+  "released": "2009-05-10",
+  "genres": [
+   "Action",
+   "Arcade",
+   "Simulation",
+   "Indie",
+   "Massively Multiplayer"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "iOS",
+   "Android",
+   "Nintendo 3DS",
+   "macOS",
+   "Linux",
+   "Xbox 360",
+   "PlayStation 3",
+   "PS Vita",
+   "Wii U"
+  ],
+  "metacritic": 83,
+  "rating": 4.44,
+  "ratings_count": 3176,
+  "playtime": 26
+ },
+ {
+  "rawg_id": 906547,
+  "slug": "hogwarts-legacy",
+  "name": "Hogwarts Legacy",
+  "image": "https://media.rawg.io/media/games/044/044b2ee023930ca138deda151f40c18c.jpg",
+  "released": "2023-02-10",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": null,
+  "rating": 3.92,
+  "ratings_count": 964,
+  "playtime": 30
+ },
+ {
+  "rawg_id": 41128,
+  "slug": "final-fantasy-10",
+  "name": "Final Fantasy X",
+  "image": "https://media.rawg.io/media/games/ddc/ddc65c56f16bc3effb8d2645b095a8c5.jpg",
+  "released": "2001-07-19",
+  "genres": [
+   "RPG"
+  ],
+  "platforms": [
+   "PlayStation 2"
+  ],
+  "metacritic": 92,
+  "rating": 4.38,
+  "ratings_count": 403,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 46667,
+  "slug": "project-octopath-traveler",
+  "name": "Octopath Traveler",
+  "image": "https://media.rawg.io/media/games/e23/e2345c839b323a94b6811705fda5af73.jpg",
+  "released": "2018-07-13",
+  "genres": [
+   "Adventure",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch"
+  ],
+  "metacritic": 82,
+  "rating": 3.93,
+  "ratings_count": 318,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 486,
+  "slug": "tales-of-berseria",
+  "name": "Tales of Berseria",
+  "image": "https://media.rawg.io/media/games/158/15880530ce424311f264671e4b0611ee.jpg",
+  "released": "2016-08-18",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 4",
+   "PlayStation 3"
+  ],
+  "metacritic": 80,
+  "rating": 3.98,
+  "ratings_count": 337,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 10141,
+  "slug": "nierautomata",
+  "name": "NieR:Automata",
+  "image": "https://media.rawg.io/media/games/5a4/5a44112251d70a25291cc33757220fce.jpg",
+  "released": "2017-03-17",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch"
+  ],
+  "metacritic": 86,
+  "rating": 4.37,
+  "ratings_count": 2186,
+  "playtime": 13
+ },
+ {
+  "rawg_id": 58134,
+  "slug": "marvels-spider-man",
+  "name": "Marvel's Spider-Man",
+  "image": "https://media.rawg.io/media/games/9aa/9aa42d16d425fa6f179fc9dc2f763647.jpg",
+  "released": "2018-09-07",
+  "genres": [
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "PlayStation 4"
+  ],
+  "metacritic": 87,
+  "rating": 4.45,
+  "ratings_count": 3754,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 278,
+  "slug": "horizon-zero-dawn",
+  "name": "Horizon Zero Dawn",
+  "image": "https://media.rawg.io/media/games/b7d/b7d3f1715fa8381a4e780173a197a615.jpg",
+  "released": "2017-02-28",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 4"
+  ],
+  "metacritic": 89,
+  "rating": 4.27,
+  "ratings_count": 3786,
+  "playtime": 11
+ },
+ {
+  "rawg_id": 452642,
+  "slug": "horizon-zero-dawn-2",
+  "name": "Horizon Forbidden West",
+  "image": "https://media.rawg.io/media/games/bf7/bf73b105ccbba42107986bbcd96fcada.jpg",
+  "released": "2022-02-18",
+  "genres": [
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "PlayStation 4"
+  ],
+  "metacritic": 86,
+  "rating": 4.18,
+  "ratings_count": 486,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 58550,
+  "slug": "ghost-of-tsushima",
+  "name": "Ghost of Tsushima",
+  "image": "https://media.rawg.io/media/games/f24/f2493ea338fe7bd3c7d73750a85a0959.jpeg",
+  "released": "2020-07-17",
+  "genres": [
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "PlayStation 4"
+  ],
+  "metacritic": 83,
+  "rating": 4.41,
+  "ratings_count": 1172,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 58812,
+  "slug": "control",
+  "name": "Control",
+  "image": "https://media.rawg.io/media/games/253/2534a46f3da7fa7c315f1387515ca393.jpg",
+  "released": "2019-08-27",
+  "genres": [
+   "Shooter",
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X"
+  ],
+  "metacritic": 84,
+  "rating": 4.14,
+  "ratings_count": 2067,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 580972,
+  "slug": "alan-wake-2",
+  "name": "Alan Wake 2",
+  "image": "https://media.rawg.io/media/games/5b9/5b963d7633cd640fa2dbc4069d1c6377.jpg",
+  "released": "2023-10-27",
+  "genres": [
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox Series S/X"
+  ],
+  "metacritic": null,
+  "rating": 4.33,
+  "ratings_count": 458,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 516111,
+  "slug": "mass-effect-legendary-edition",
+  "name": "Mass Effect: Legendary Edition",
+  "image": "https://media.rawg.io/media/games/64e/64e2a77f37ddc48d102127234af99886.jpg",
+  "released": "2021-05-14",
+  "genres": [
+   "Shooter",
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X"
+  ],
+  "metacritic": 88,
+  "rating": 4.57,
+  "ratings_count": 585,
+  "playtime": 12
+ },
+ {
+  "rawg_id": 4806,
+  "slug": "mass-effect-2",
+  "name": "Mass Effect 2",
+  "image": "https://media.rawg.io/media/games/3cf/3cff89996570cf29a10eb9cd967dcf73.jpg",
+  "released": "2010-01-26",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "Xbox 360",
+   "PlayStation 3"
+  ],
+  "metacritic": 94,
+  "rating": 4.45,
+  "ratings_count": 3106,
+  "playtime": 22
+ },
+ {
+  "rawg_id": 4639,
+  "slug": "dragon-age-origins",
+  "name": "Dragon Age: Origins",
+  "image": "https://media.rawg.io/media/games/dc0/dc0926d3f84ffbcc00968fe8a6f0aed3.jpg",
+  "released": "2009-11-03",
+  "genres": [
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "macOS",
+   "Xbox 360",
+   "PlayStation 3"
+  ],
+  "metacritic": 91,
+  "rating": 4.39,
+  "ratings_count": 1995,
+  "playtime": 7
+ },
+ {
+  "rawg_id": 3070,
+  "slug": "fallout-4",
+  "name": "Fallout 4",
+  "image": "https://media.rawg.io/media/games/d82/d82990b9c67ba0d2d09d4e6fa88885a7.jpg",
+  "released": "2015-11-09",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4"
+  ],
+  "metacritic": 84,
+  "rating": 3.81,
+  "ratings_count": 3447,
+  "playtime": 38
+ },
+ {
+  "rawg_id": 5563,
+  "slug": "fallout-new-vegas",
+  "name": "Fallout: New Vegas",
+  "image": "https://media.rawg.io/media/games/995/9951d9d55323d08967640f7b9ab3e342.jpg",
+  "released": "2010-10-19",
+  "genres": [
+   "Shooter",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox 360",
+   "PlayStation 3"
+  ],
+  "metacritic": 84,
+  "rating": 4.43,
+  "ratings_count": 2658,
+  "playtime": 12
+ },
+ {
+  "rawg_id": 5679,
+  "slug": "the-elder-scrolls-v-skyrim",
+  "name": "The Elder Scrolls V: Skyrim",
+  "image": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg",
+  "released": "2011-11-11",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch",
+   "Xbox 360",
+   "PlayStation 3"
+  ],
+  "metacritic": 94,
+  "rating": 4.42,
+  "ratings_count": 4963,
+  "playtime": 46
+ },
+ {
+  "rawg_id": 58779,
+  "slug": "starfield",
+  "name": "Starfield",
+  "image": "https://media.rawg.io/media/games/ba8/ba82c971336adfd290e4c0eab6504fcf.jpg",
+  "released": "2023-09-06",
+  "genres": [
+   "Adventure",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox Series S/X"
+  ],
+  "metacritic": 88,
+  "rating": 3.25,
+  "ratings_count": 358,
+  "playtime": 29
+ },
+ {
+  "rawg_id": 384567,
+  "slug": "crusader-kings-iii",
+  "name": "Crusader Kings III",
+  "image": "https://media.rawg.io/media/games/77e/77e8a4a7b377a081aabd0dbf688417e1.jpg",
+  "released": "2020-09-01",
+  "genres": [
+   "Strategy",
+   "RPG",
+   "Simulation"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox Series S/X",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 86,
+  "rating": 4.32,
+  "ratings_count": 472,
+  "playtime": 12
+ },
+ {
+  "rawg_id": 10297,
+  "slug": "civilization-vi",
+  "name": "Sid Meier’s Civilization VI",
+  "image": "https://media.rawg.io/media/games/997/997ab4d67e96fb20a4092383477d4463.jpg",
+  "released": "2016-10-20",
+  "genres": [
+   "Strategy",
+   "Simulation"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "iOS",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 88,
+  "rating": 4.16,
+  "ratings_count": 1437,
+  "playtime": 15
+ },
+ {
+  "rawg_id": 10065,
+  "slug": "cities-skylines",
+  "name": "Cities: Skylines",
+  "image": "https://media.rawg.io/media/games/25c/25c4776ab5723d5d735d8bf617ca12d9.jpg",
+  "released": "2015-03-10",
+  "genres": [
+   "Strategy",
+   "Simulation"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 85,
+  "rating": 4.12,
+  "ratings_count": 1539,
+  "playtime": 9
+ },
+ {
+  "rawg_id": 10926,
+  "slug": "factorio",
+  "name": "Factorio",
+  "image": "https://media.rawg.io/media/games/7e4/7e4e22b76da131e9690d5757555093c2.jpg",
+  "released": "2020-08-14",
+  "genres": [
+   "Casual",
+   "Strategy",
+   "Indie",
+   "Simulation"
+  ],
+  "platforms": [
+   "PC",
+   "Nintendo Switch",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 83,
+  "rating": 4.35,
+  "ratings_count": 814,
+  "playtime": 20
+ },
+ {
+  "rawg_id": 58806,
+  "slug": "satisfactory",
+  "name": "Satisfactory",
+  "image": "https://media.rawg.io/media/games/9b0/9b03581c1ba7df63e221eb0828f8bb52.jpg",
+  "released": "2024-09-11",
+  "genres": [
+   "Indie",
+   "Strategy",
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC"
+  ],
+  "metacritic": null,
+  "rating": 4.3,
+  "ratings_count": 363,
+  "playtime": 12
+ },
+ {
+  "rawg_id": 12130,
+  "slug": "rimworld",
+  "name": "RimWorld",
+  "image": "https://media.rawg.io/media/screenshots/4d8/4d85fbe90066fdbef295a618640c4a82.jpg",
+  "released": "2016-07-15",
+  "genres": [
+   "Strategy",
+   "Indie",
+   "Simulation"
+  ],
+  "platforms": [
+   "PC",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 87,
+  "rating": 4.35,
+  "ratings_count": 634,
+  "playtime": 19
+ },
+ {
+  "rawg_id": 45821,
+  "slug": "frostpunk",
+  "name": "Frostpunk",
+  "image": "https://media.rawg.io/media/games/a88/a886c37bf112d009e318b106db9d420a.jpg",
+  "released": "2018-04-24",
+  "genres": [
+   "Strategy",
+   "Simulation"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch"
+  ],
+  "metacritic": 85,
+  "rating": 4.19,
+  "ratings_count": 1071,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 11214,
+  "slug": "northgard",
+  "name": "Northgard",
+  "image": "https://media.rawg.io/media/games/725/725d08c4174c129ce5275c43cd0347c6.jpg",
+  "released": "2018-03-06",
+  "genres": [
+   "Adventure",
+   "RPG",
+   "Strategy",
+   "Simulation",
+   "Indie"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "iOS",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 79,
+  "rating": 3.77,
+  "ratings_count": 502,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 59314,
+  "slug": "anno-1800",
+  "name": "Anno 1800",
+  "image": "https://media.rawg.io/media/games/065/0650c381e12c28053e1c98779d996305.jpg",
+  "released": "2019-04-16",
+  "genres": [
+   "Strategy",
+   "Simulation"
+  ],
+  "platforms": [
+   "PC"
+  ],
+  "metacritic": 81,
+  "rating": 4.22,
+  "ratings_count": 186,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 452638,
+  "slug": "stray-2",
+  "name": "Stray",
+  "image": "https://media.rawg.io/media/games/cd3/cd3c9c7d3e95cb1608fd6250f1b90b7a.jpg",
+  "released": "2022-07-19",
+  "genres": [
+   "Adventure",
+   "Action",
+   "Puzzle",
+   "Indie",
+   "Platformer"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch",
+   "macOS"
+  ],
+  "metacritic": 82,
+  "rating": 4.15,
+  "ratings_count": 1277,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 366881,
+  "slug": "little-nightmares-ii",
+  "name": "Little Nightmares II",
+  "image": "https://media.rawg.io/media/games/c2a/c2a7dc4540eb79aaff7099ae691105d3.jpg",
+  "released": "2021-02-10",
+  "genres": [
+   "Platformer",
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": 82,
+  "rating": 4.37,
+  "ratings_count": 567,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 1450,
+  "slug": "inside",
+  "name": "INSIDE",
+  "image": "https://media.rawg.io/media/games/d5a/d5a24f9f71315427fa6e966fdd98dfa6.jpg",
+  "released": "2016-06-28",
+  "genres": [
+   "Adventure",
+   "Action",
+   "Puzzle",
+   "Indie",
+   "Platformer"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "iOS",
+   "macOS"
+  ],
+  "metacritic": 87,
+  "rating": 4.38,
+  "ratings_count": 2599,
+  "playtime": 4
+ },
+ {
+  "rawg_id": 1030,
+  "slug": "limbo",
+  "name": "Limbo",
+  "image": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg",
+  "released": "2010-07-21",
+  "genres": [
+   "Adventure",
+   "Action",
+   "Puzzle",
+   "Indie",
+   "Platformer"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "iOS",
+   "Android",
+   "macOS",
+   "Linux",
+   "Xbox 360",
+   "PlayStation 3",
+   "PS Vita"
+  ],
+  "metacritic": 88,
+  "rating": 4.14,
+  "ratings_count": 3412,
+  "playtime": 3
+ },
+ {
+  "rawg_id": 28154,
+  "slug": "cuphead",
+  "name": "Cuphead",
+  "image": "https://media.rawg.io/media/games/226/2262cea0b385db6cf399f4be831603b0.jpg",
+  "released": "2017-09-29",
+  "genres": [
+   "Platformer",
+   "Indie",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "macOS"
+  ],
+  "metacritic": 87,
+  "rating": 4.37,
+  "ratings_count": 2051,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 28199,
+  "slug": "ori-and-the-will-of-the-wisps",
+  "name": "Ori and the Will of the Wisps",
+  "image": "https://media.rawg.io/media/games/718/71891d2484a592d871e91dc826707e1c.jpg",
+  "released": "2020-03-10",
+  "genres": [
+   "Platformer",
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": 91,
+  "rating": 4.41,
+  "ratings_count": 1323,
+  "playtime": 11
+ },
+ {
+  "rawg_id": 17959,
+  "slug": "ori-and-the-blind-forest-definitive-edition",
+  "name": "Ori and the Blind Forest: Definitive Edition",
+  "image": "https://media.rawg.io/media/games/04a/04a7e7e185fb51493bdcbe1693a8b3dc.jpg",
+  "released": "2016-04-27",
+  "genres": [
+   "Platformer",
+   "Adventure"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "Nintendo Switch",
+   "Xbox 360"
+  ],
+  "metacritic": 88,
+  "rating": 4.42,
+  "ratings_count": 1730,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 3771,
+  "slug": "rayman-legends",
+  "name": "Rayman Legends",
+  "image": "https://media.rawg.io/media/games/85c/85c8ae70e7cdf0105f06ef6bdce63b8b.jpg",
+  "released": "2013-08-29",
+  "genres": [
+   "Platformer"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "Xbox 360",
+   "PlayStation 3",
+   "PS Vita",
+   "Wii U"
+  ],
+  "metacritic": 89,
+  "rating": 4.16,
+  "ratings_count": 1568,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 28026,
+  "slug": "super-mario-odyssey",
+  "name": "Super Mario Odyssey",
+  "image": "https://media.rawg.io/media/games/267/267bd0dbc496f52692487d07d014c061.jpg",
+  "released": "2017-10-27",
+  "genres": [
+   "Platformer",
+   "Arcade"
+  ],
+  "platforms": [
+   "Nintendo Switch"
+  ],
+  "metacritic": 97,
+  "rating": 4.42,
+  "ratings_count": 1946,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 23165,
+  "slug": "mario-kart-8-deluxe",
+  "name": "Mario Kart 8 Deluxe",
+  "image": "https://media.rawg.io/media/games/6f8/6f846e941c78cfbabe53cd67e55ced83.jpg",
+  "released": "2017-04-27",
+  "genres": [
+   "Racing"
+  ],
+  "platforms": [
+   "Nintendo Switch"
+  ],
+  "metacritic": 92,
+  "rating": 4.44,
+  "ratings_count": 909,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 58829,
+  "slug": "super-smash-bros-ultimate",
+  "name": "Super Smash Bros. Ultimate",
+  "image": "https://media.rawg.io/media/games/9f3/9f3c513b301d8d7250a64dd7e73c62df.jpg",
+  "released": "2018-12-07",
+  "genres": [
+   "Fighting"
+  ],
+  "platforms": [
+   "Nintendo Switch"
+  ],
+  "metacritic": 93,
+  "rating": 4.37,
+  "ratings_count": 1087,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 421698,
+  "slug": "animal-crossing-2019",
+  "name": "Animal Crossing: New Horizons",
+  "image": "https://media.rawg.io/media/games/42f/42fe1abd4d7c11ca92d93a0fb0f8662b.jpg",
+  "released": "2020-03-20",
+  "genres": [
+   "Simulation"
+  ],
+  "platforms": [
+   "Nintendo Switch"
+  ],
+  "metacritic": 90,
+  "rating": 4.3,
+  "ratings_count": 770,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 564761,
+  "slug": "pokemon-legends-arceus",
+  "name": "Pokémon Legends: Arceus",
+  "image": "https://media.rawg.io/media/games/80a/80a3e1060b49c02f901e781b263cd881.jpg",
+  "released": "2022-01-28",
+  "genres": [
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "Nintendo Switch"
+  ],
+  "metacritic": 83,
+  "rating": 4.02,
+  "ratings_count": 169,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 622495,
+  "slug": "metroid-dread",
+  "name": "Metroid Dread",
+  "image": "https://media.rawg.io/media/games/c26/c262f8b54b46edc72594c4a9bb8ee13e.jpg",
+  "released": "2021-10-08",
+  "genres": [
+   "Platformer",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "Nintendo Switch"
+  ],
+  "metacritic": null,
+  "rating": 4.35,
+  "ratings_count": 299,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 58777,
+  "slug": "doom-eternal",
+  "name": "DOOM Eternal",
+  "image": "https://media.rawg.io/media/games/3ea/3ea3c9bbd940b6cb7f2139e42d3d443f.jpg",
+  "released": "2020-03-19",
+  "genres": [
+   "Shooter",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch"
+  ],
+  "metacritic": 86,
+  "rating": 4.37,
+  "ratings_count": 1434,
+  "playtime": 12
+ },
+ {
+  "rawg_id": 2454,
+  "slug": "doom",
+  "name": "DOOM (2016)",
+  "image": "https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg",
+  "released": "2016-05-12",
+  "genres": [
+   "Shooter",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch"
+  ],
+  "metacritic": 85,
+  "rating": 4.38,
+  "ratings_count": 3644,
+  "playtime": 10
+ },
+ {
+  "rawg_id": 914789,
+  "slug": "hi-fi-rush",
+  "name": "Hi-Fi Rush",
+  "image": "https://media.rawg.io/media/games/62f/62f71917e64e913f2a893e7373319c60.jpg",
+  "released": "2023-01-25",
+  "genres": [
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox Series S/X"
+  ],
+  "metacritic": null,
+  "rating": 4.3,
+  "ratings_count": 370,
+  "playtime": 4
+ },
+ {
+  "rawg_id": 605674,
+  "slug": "lies-of-p",
+  "name": "Lies Of P",
+  "image": "https://media.rawg.io/media/games/458/45838becd01e929b6be8b88d655cebfc.jpg",
+  "released": "2023-09-19",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "macOS"
+  ],
+  "metacritic": null,
+  "rating": 4.16,
+  "ratings_count": 323,
+  "playtime": 27
+ },
+ {
+  "rawg_id": 892902,
+  "slug": "armored-core-vi",
+  "name": "Armored Core VI: Fires of Rubicon",
+  "image": "https://media.rawg.io/media/games/c97/c97aba78a97038867d4b32a81fe48567.jpg",
+  "released": "2023-08-25",
+  "genres": [
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X"
+  ],
+  "metacritic": null,
+  "rating": 4.1,
+  "ratings_count": 91,
+  "playtime": 11
+ },
+ {
+  "rawg_id": 29338,
+  "slug": "days-gone",
+  "name": "Days Gone",
+  "image": "https://media.rawg.io/media/games/a79/a79d2fc90c4dbf07a8580b19600fd61d.jpg",
+  "released": "2019-04-26",
+  "genres": [
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 4"
+  ],
+  "metacritic": 74,
+  "rating": 3.98,
+  "ratings_count": 1413,
+  "playtime": 10
+ },
+ {
+  "rawg_id": 564757,
+  "slug": "sifu",
+  "name": "Sifu",
+  "image": "https://media.rawg.io/media/games/3a9/3a9ea2db24f879e61fe7b824f5888d2a.jpg",
+  "released": "2022-02-08",
+  "genres": [
+   "Action",
+   "Fighting"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": 79,
+  "rating": 4.07,
+  "ratings_count": 392,
+  "playtime": 3
+ },
+ {
+  "rawg_id": 452639,
+  "slug": "returnal",
+  "name": "Returnal",
+  "image": "https://media.rawg.io/media/games/673/673f27be4c5dbf37ce3ed0ed5ddf9d8d.jpg",
+  "released": "2021-04-30",
+  "genres": [
+   "Shooter",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5"
+  ],
+  "metacritic": 86,
+  "rating": 4.15,
+  "ratings_count": 320,
+  "playtime": 8
+ },
+ {
+  "rawg_id": 727315,
+  "slug": "ratchet-clank-rift-apart",
+  "name": "Ratchet & Clank: Rift Apart",
+  "image": "https://media.rawg.io/media/games/ccf/ccfd3fd488a8ed61145a3da96c080131.jpg",
+  "released": "2021-06-11",
+  "genres": [
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5"
+  ],
+  "metacritic": 88,
+  "rating": 4.38,
+  "ratings_count": 422,
+  "playtime": 13
+ },
+ {
+  "rawg_id": 455597,
+  "slug": "it-takes-two-2",
+  "name": "It Takes Two",
+  "image": "https://media.rawg.io/media/games/d47/d479582ed0a46496ad34f65c7099d7e5.jpg",
+  "released": "2021-03-26",
+  "genres": [
+   "Platformer",
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": 88,
+  "rating": 4.45,
+  "ratings_count": 1765,
+  "playtime": 10
+ },
+ {
+  "rawg_id": 58764,
+  "slug": "outer-wilds",
+  "name": "Outer Wilds",
+  "image": "https://media.rawg.io/media/games/9f4/9f418898f5415668ca47b5f4ab1ecfeb.jpg",
+  "released": "2019-05-29",
+  "genres": [
+   "Indie",
+   "Adventure",
+   "Puzzle"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch"
+  ],
+  "metacritic": 84,
+  "rating": 4.36,
+  "ratings_count": 902,
+  "playtime": 4
+ },
+ {
+  "rawg_id": 274762,
+  "slug": "the-outer-worlds",
+  "name": "The Outer Worlds",
+  "image": "https://media.rawg.io/media/games/704/704f831d2d132e9614931f1c4eab9e86.jpg",
+  "released": "2019-10-25",
+  "genres": [
+   "Shooter",
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch"
+  ],
+  "metacritic": 80,
+  "rating": 3.85,
+  "ratings_count": 1492,
+  "playtime": 8
+ },
+ {
+  "rawg_id": 10419,
+  "slug": "subnautica",
+  "name": "Subnautica",
+  "image": "https://media.rawg.io/media/games/739/73990e3ec9f43a9e8ecafe207fa4f368.jpg",
+  "released": "2018-01-23",
+  "genres": [
+   "Indie",
+   "Adventure"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch",
+   "macOS"
+  ],
+  "metacritic": 83,
+  "rating": 4.24,
+  "ratings_count": 1491,
+  "playtime": 10
+ },
+ {
+  "rawg_id": 248521,
+  "slug": "valheim",
+  "name": "Valheim",
+  "image": "https://media.rawg.io/media/games/adb/adb59be81367b19c2544457424bcf086.jpg",
+  "released": "2026-09-09",
+  "genres": [
+   "Indie",
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Linux"
+  ],
+  "metacritic": null,
+  "rating": 3.98,
+  "ratings_count": 652,
+  "playtime": 12
+ },
+ {
+  "rawg_id": 391397,
+  "slug": "grounded-2",
+  "name": "Grounded",
+  "image": "https://media.rawg.io/media/games/0d7/0d7b7a687bf665b61337904193c56855.jpg",
+  "released": "2022-09-27",
+  "genres": [
+   "Indie",
+   "Adventure"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "Xbox Series S/X"
+  ],
+  "metacritic": 82,
+  "rating": 3.8,
+  "ratings_count": 301,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 50781,
+  "slug": "sea-of-thieves",
+  "name": "Sea of Thieves",
+  "image": "https://media.rawg.io/media/games/5f6/5f61441e6338e9221f96a8f4c64c7bb8.jpg",
+  "released": "2018-03-20",
+  "genres": [
+   "Massively Multiplayer",
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "Xbox Series S/X"
+  ],
+  "metacritic": 68,
+  "rating": 3.69,
+  "ratings_count": 1061,
+  "playtime": 13
+ },
+ {
+  "rawg_id": 3272,
+  "slug": "rocket-league",
+  "name": "Rocket League",
+  "image": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg",
+  "released": "2015-07-07",
+  "genres": [
+   "Racing",
+   "Indie",
+   "Sports"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 86,
+  "rating": 3.93,
+  "ratings_count": 2870,
+  "playtime": 21
+ },
+ {
+  "rawg_id": 388308,
+  "slug": "overwatch-2",
+  "name": "Overwatch 2",
+  "image": "https://media.rawg.io/media/games/95a/95a10817d1fc648cff1153f3fa8ef6c5.jpg",
+  "released": "2022-10-04",
+  "genres": [
+   "Shooter",
+   "Massively Multiplayer",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": 78,
+  "rating": 3.14,
+  "ratings_count": 382,
+  "playtime": 4
+ },
+ {
+  "rawg_id": 383516,
+  "slug": "league-of-legends-wild-rift",
+  "name": "League of Legends: Wild Rift",
+  "image": "https://media.rawg.io/media/games/3c7/3c773379b9a4161528bf12a2c9346e93.jpg",
+  "released": "2020-10-27",
+  "genres": [
+   "Strategy",
+   "Action"
+  ],
+  "platforms": [
+   "iOS",
+   "Android"
+  ],
+  "metacritic": 89,
+  "rating": 3.8,
+  "ratings_count": 71,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 47137,
+  "slug": "fornite-battle-royale",
+  "name": "Fortnite Battle Royale",
+  "image": "https://media.rawg.io/media/games/dcb/dcbb67f371a9a28ea38ffd73ee0f53f3.jpg",
+  "released": "2017-09-26",
+  "genres": [
+   "Shooter",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "PlayStation 4",
+   "Xbox One",
+   "Xbox Series S/X",
+   "Nintendo Switch",
+   "iOS",
+   "Android"
+  ],
+  "metacritic": null,
+  "rating": 3.29,
+  "ratings_count": 1144,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 290856,
+  "slug": "apex-legends",
+  "name": "Apex Legends",
+  "image": "https://media.rawg.io/media/games/737/737ea5662211d2e0bbd6f5989189e4f1.jpg",
+  "released": "2019-02-04",
+  "genres": [
+   "Shooter",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "macOS"
+  ],
+  "metacritic": 80,
+  "rating": 3.63,
+  "ratings_count": 2423,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 415171,
+  "slug": "valorant",
+  "name": "Valorant",
+  "image": "https://media.rawg.io/media/games/b11/b11127b9ee3c3701bd15b9af3286d20e.jpg",
+  "released": "2020-06-02",
+  "genres": [
+   "Shooter",
+   "Strategy",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox Series S/X"
+  ],
+  "metacritic": 80,
+  "rating": 3.54,
+  "ratings_count": 474,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 10213,
+  "slug": "dota-2",
+  "name": "Dota 2",
+  "image": "https://media.rawg.io/media/games/6fc/6fcf4cd3b17c288821388e6085bb0fc9.jpg",
+  "released": "2013-07-09",
+  "genres": [
+   "Massively Multiplayer",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 90,
+  "rating": 3.07,
+  "ratings_count": 2867,
+  "playtime": 14
+ },
+ {
+  "rawg_id": 58818,
+  "slug": "tetris-effect",
+  "name": "Tetris Effect",
+  "image": "https://media.rawg.io/media/games/59d/59d568770eecc7b3f18fcedd314b68d3.jpg",
+  "released": "2018-11-09",
+  "genres": [
+   "Puzzle"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 4"
+  ],
+  "metacritic": 90,
+  "rating": 4.36,
+  "ratings_count": 300,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 452633,
+  "slug": "gran-turismo-7",
+  "name": "Gran Turismo 7",
+  "image": "https://media.rawg.io/media/games/3f6/3f6a04b856f23310d3c2f5be8c5963f7.jpg",
+  "released": "2022-03-04",
+  "genres": [
+   "Racing"
+  ],
+  "platforms": [
+   "PlayStation 5",
+   "PlayStation 4"
+  ],
+  "metacritic": 84,
+  "rating": 4.18,
+  "ratings_count": 71,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 58890,
+  "slug": "need-for-speed-most-wanted",
+  "name": "Need For Speed: Most Wanted",
+  "image": "https://media.rawg.io/media/games/41b/41ba37b6a3e706dc1d27d49afbf0f72a.jpg",
+  "released": "2005-11-15",
+  "genres": [
+   "Racing",
+   "Arcade"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox 360",
+   "Xbox",
+   "PlayStation 3",
+   "PlayStation 2",
+   "PSP",
+   "GameCube"
+  ],
+  "metacritic": 83,
+  "rating": 4.45,
+  "ratings_count": 1812,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 5390,
+  "slug": "burnout-paradise",
+  "name": "Burnout Paradise",
+  "image": "https://media.rawg.io/media/games/788/788b80cbc8c39167f7ed6dd89fd398dc.jpg",
+  "released": "2008-01-22",
+  "genres": [
+   "Racing",
+   "Arcade"
+  ],
+  "platforms": [
+   "Xbox 360",
+   "PlayStation 3"
+  ],
+  "metacritic": 87,
+  "rating": 4.09,
+  "ratings_count": 626,
+  "playtime": 8
+ },
+ {
+  "rawg_id": 963218,
+  "slug": "ea-sports-fc-24",
+  "name": "EA SPORTS FC 24",
+  "image": "https://media.rawg.io/media/games/104/10404407d458d90f4559a1f587c2650a.jpg",
+  "released": "2023-09-22",
+  "genres": [
+   "Casual",
+   "Simulation",
+   "Sports"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": null,
+  "rating": 3.47,
+  "ratings_count": 73,
+  "playtime": 30
+ },
+ {
+  "rawg_id": 26648,
+  "slug": "top-spin-4",
+  "name": "Top Spin 4",
+  "image": "https://media.rawg.io/media/screenshots/129/12926ec9b3355b4830a5483103898765.jpg",
+  "released": "2011-03-15",
+  "genres": [
+   "Sports"
+  ],
+  "platforms": [
+   "Xbox 360",
+   "PlayStation 3",
+   "Wii"
+  ],
+  "metacritic": 83,
+  "rating": 4.39,
+  "ratings_count": 18,
+  "playtime": 2
+ },
+ {
+  "rawg_id": 51609,
+  "slug": "mario-tennis-aces",
+  "name": "Mario Tennis Aces",
+  "image": "https://media.rawg.io/media/games/655/655977041d1fcd25a71a54727b93bb2f.jpg",
+  "released": "2018-06-21",
+  "genres": [
+   "Arcade",
+   "Sports"
+  ],
+  "platforms": [
+   "Nintendo Switch"
+  ],
+  "metacritic": 75,
+  "rating": 3.66,
+  "ratings_count": 126,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 971687,
+  "slug": "football-manager-2024",
+  "name": "Football Manager 2024",
+  "image": "https://media.rawg.io/media/screenshots/c73/c73de07ff07a735b9ee7f39aa697fb93.jpg",
+  "released": "2023-11-06",
+  "genres": [
+   "Strategy",
+   "Simulation",
+   "Sports"
+  ],
+  "platforms": [
+   "PC",
+   "macOS"
+  ],
+  "metacritic": null,
+  "rating": 3.95,
+  "ratings_count": 21,
+  "playtime": 54
+ },
+ {
+  "rawg_id": 963212,
+  "slug": "metaphor-refantazio",
+  "name": "Metaphor: ReFantazio",
+  "image": "https://media.rawg.io/media/games/2cd/2cd2467a32aaaed0bdeb192c2831cfe0.jpg",
+  "released": "2024-10-11",
+  "genres": [
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "PlayStation 4",
+   "Xbox Series S/X"
+  ],
+  "metacritic": null,
+  "rating": 4.26,
+  "ratings_count": 77,
+  "playtime": 27
+ },
+ {
+  "rawg_id": 983210,
+  "slug": "clair-obscur-expedition-33",
+  "name": "Clair Obscur: Expedition 33",
+  "image": "https://media.rawg.io/media/games/466/4667f17fdee9ebbcea2049e54f8e2b96.jpg",
+  "released": "2025-04-24",
+  "genres": [
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox Series S/X"
+  ],
+  "metacritic": null,
+  "rating": 4.42,
+  "ratings_count": 508,
+  "playtime": 26
+ },
+ {
+  "rawg_id": 481913,
+  "slug": "black-myth-wu-kong",
+  "name": "Black Myth: Wukong",
+  "image": "https://media.rawg.io/media/games/779/77988e89f7862afeede524420aa251b0.jpg",
+  "released": "2024-08-20",
+  "genres": [
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox Series S/X"
+  ],
+  "metacritic": null,
+  "rating": 4.29,
+  "ratings_count": 196,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 705616,
+  "slug": "warhammer-40000-space-marine-ii",
+  "name": "Warhammer 40,000: Space Marine II",
+  "image": "https://media.rawg.io/media/games/950/950f4eae6dc907d7f534d5dcce454487.jpg",
+  "released": "2024-09-09",
+  "genres": [
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox Series S/X"
+  ],
+  "metacritic": null,
+  "rating": 4.15,
+  "ratings_count": 170,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 976564,
+  "slug": "helldivers-2",
+  "name": "HELLDIVERS 2",
+  "image": "https://media.rawg.io/media/screenshots/755/7552f856f88b0de1dee040121039b079.jpg",
+  "released": "2024-02-08",
+  "genres": [
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox Series S/X"
+  ],
+  "metacritic": null,
+  "rating": 4.24,
+  "ratings_count": 130,
+  "playtime": 22
+ },
+ {
+  "rawg_id": 718135,
+  "slug": "palworld",
+  "name": "Palworld",
+  "image": "https://media.rawg.io/media/games/4e9/4e9c951414c732923fa72d5b1da49402.jpg",
+  "released": "2024-01-19",
+  "genres": [
+   "Indie",
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox Series S/X"
+  ],
+  "metacritic": null,
+  "rating": 3.59,
+  "ratings_count": 152,
+  "playtime": 22
+ },
+ {
+  "rawg_id": 968329,
+  "slug": "lethal-company",
+  "name": "Lethal Company",
+  "image": "https://media.rawg.io/media/screenshots/2fa/2faa93b7882a018ac21a1f9cc5176579.jpg",
+  "released": "2023-10-23",
+  "genres": [
+   "Indie",
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC"
+  ],
+  "metacritic": null,
+  "rating": 4.23,
+  "ratings_count": 161,
+  "playtime": 8
+ },
+ {
+  "rawg_id": 871264,
+  "slug": "dave-the-diver",
+  "name": "Dave the Diver",
+  "image": "https://media.rawg.io/media/games/1ee/1eec43616e3ff00a674124d746926b23.jpg",
+  "released": "2023-06-28",
+  "genres": [
+   "Adventure",
+   "Action",
+   "RPG",
+   "Simulation"
+  ],
+  "platforms": [
+   "PC",
+   "Nintendo Switch",
+   "macOS"
+  ],
+  "metacritic": null,
+  "rating": 4.25,
+  "ratings_count": 195,
+  "playtime": 9
+ },
+ {
+  "rawg_id": 650605,
+  "slug": "cult-of-the-lamb",
+  "name": "Cult of the Lamb",
+  "image": "https://media.rawg.io/media/games/ab8/ab8217a1fe2ced388a388722734e6d16.jpg",
+  "released": "2022-08-11",
+  "genres": [
+   "Indie",
+   "Strategy",
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch",
+   "macOS"
+  ],
+  "metacritic": null,
+  "rating": 4.11,
+  "ratings_count": 455,
+  "playtime": 10
+ },
+ {
+  "rawg_id": 945034,
+  "slug": "slay-the-princess",
+  "name": "Slay the Princess",
+  "image": "https://media.rawg.io/media/games/1fa/1fa542171e580af49fabd094bd232659.jpg",
+  "released": "2023-10-23",
+  "genres": [
+   "Indie",
+   "Adventure",
+   "RPG",
+   "Simulation"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": null,
+  "rating": 4.32,
+  "ratings_count": 72,
+  "playtime": 4
+ },
+ {
+  "rawg_id": 914795,
+  "slug": "pizza-tower",
+  "name": "Pizza Tower",
+  "image": "https://media.rawg.io/media/games/2d0/2d02bcfc07f4b5ed8623599ff999ee91.jpg",
+  "released": "2023-01-26",
+  "genres": [
+   "Indie",
+   "Action"
+  ],
+  "platforms": [
+   "PC"
+  ],
+  "metacritic": null,
+  "rating": 4.17,
+  "ratings_count": 61,
+  "playtime": 2
+ },
+ {
+  "rawg_id": 13856,
+  "slug": "katana-zero",
+  "name": "Katana ZERO",
+  "image": "https://media.rawg.io/media/games/d37/d37e110ddcc0bd52d99f0f647b737a0a.jpg",
+  "released": "2019-04-17",
+  "genres": [
+   "Platformer",
+   "Indie",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "Nintendo Switch",
+   "macOS"
+  ],
+  "metacritic": 83,
+  "rating": 4.39,
+  "ratings_count": 1160,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 3612,
+  "slug": "hotline-miami",
+  "name": "Hotline Miami",
+  "image": "https://media.rawg.io/media/games/9fa/9fa63622543e5d4f6d99aa9d73b043de.jpg",
+  "released": "2012-10-22",
+  "genres": [
+   "Indie",
+   "Shooter",
+   "Arcade",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "Linux",
+   "PS Vita"
+  ],
+  "metacritic": 85,
+  "rating": 4.38,
+  "ratings_count": 2665,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 13627,
+  "slug": "undertale",
+  "name": "Undertale",
+  "image": "https://media.rawg.io/media/games/ffe/ffed87105b14f5beff72ff44a7793fd5.jpg",
+  "released": "2015-09-14",
+  "genres": [
+   "Indie",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 4",
+   "Xbox One",
+   "Xbox Series S/X",
+   "Nintendo Switch",
+   "macOS",
+   "Linux",
+   "PS Vita"
+  ],
+  "metacritic": 92,
+  "rating": 4.35,
+  "ratings_count": 1902,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 46508,
+  "slug": "return-of-the-obra-dinn",
+  "name": "Return Of The Obra Dinn",
+  "image": "https://media.rawg.io/media/games/052/052f9afc7aaeea3e2c5d46eafa92c64e.jpg",
+  "released": "2018-10-17",
+  "genres": [
+   "Indie",
+   "Adventure"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "macOS"
+  ],
+  "metacritic": 88,
+  "rating": 4.33,
+  "ratings_count": 764,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 59637,
+  "slug": "untitled-goose-game",
+  "name": "Untitled Goose Game",
+  "image": "https://media.rawg.io/media/games/199/1996ab6448cadb2ce4bea31536466333.jpg",
+  "released": "2019-09-20",
+  "genres": [
+   "Indie",
+   "Family",
+   "Action",
+   "Puzzle"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "macOS"
+  ],
+  "metacritic": 80,
+  "rating": 4.05,
+  "ratings_count": 720,
+  "playtime": 2
+ },
+ {
+  "rawg_id": 3254,
+  "slug": "journey",
+  "name": "Journey",
+  "image": "https://media.rawg.io/media/games/baf/baf9905270314e07e6850cffdb51df41.jpg",
+  "released": "2012-03-13",
+  "genres": [
+   "Family",
+   "Indie",
+   "Adventure"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 4",
+   "iOS",
+   "PlayStation 3"
+  ],
+  "metacritic": 92,
+  "rating": 4.32,
+  "ratings_count": 2470,
+  "playtime": 2
+ },
+ {
+  "rawg_id": 59313,
+  "slug": "gris",
+  "name": "Gris",
+  "image": "https://media.rawg.io/media/games/51c/51c430f1795c79b78f863a9f22dc422d.jpg",
+  "released": "2018-12-13",
+  "genres": [
+   "Indie",
+   "Platformer",
+   "Adventure",
+   "Puzzle"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch",
+   "iOS",
+   "Android",
+   "macOS"
+  ],
+  "metacritic": 83,
+  "rating": 4.2,
+  "ratings_count": 1076,
+  "playtime": 3
+ },
+ {
+  "rawg_id": 2819,
+  "slug": "firewatch",
+  "name": "Firewatch",
+  "image": "https://media.rawg.io/media/games/0be/0bea0a08a4d954337305391b778a7f37.jpg",
+  "released": "2016-02-08",
+  "genres": [
+   "Indie",
+   "Adventure"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 81,
+  "rating": 4.3,
+  "ratings_count": 2511,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 42,
+  "slug": "what-remains-of-edith-finch",
+  "name": "What Remains of Edith Finch",
+  "image": "https://media.rawg.io/media/games/34e/34e100b1f648de99f32d477065f04653.jpg",
+  "released": "2017-04-23",
+  "genres": [
+   "Indie",
+   "Adventure"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "iOS"
+  ],
+  "metacritic": 89,
+  "rating": 4.38,
+  "ratings_count": 2046,
+  "playtime": 3
+ },
+ {
+  "rawg_id": 3439,
+  "slug": "life-is-strange-episode-1-2",
+  "name": "Life is Strange",
+  "image": "https://media.rawg.io/media/games/562/562553814dd54e001a541e4ee83a591c.jpg",
+  "released": "2015-01-29",
+  "genres": [
+   "Adventure"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 4",
+   "Xbox One",
+   "iOS",
+   "Android",
+   "macOS",
+   "Linux",
+   "Xbox 360",
+   "PlayStation 3"
+  ],
+  "metacritic": 83,
+  "rating": 4.12,
+  "ratings_count": 3786,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 29177,
+  "slug": "detroit-become-human",
+  "name": "Detroit: Become Human",
+  "image": "https://media.rawg.io/media/games/951/951572a3dd1e42544bd39a5d5b42d234.jpg",
+  "released": "2018-05-25",
+  "genres": [
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 4"
+  ],
+  "metacritic": 79,
+  "rating": 4.34,
+  "ratings_count": 3356,
+  "playtime": 10
+ },
+ {
+  "rawg_id": 2743,
+  "slug": "heavy-rain",
+  "name": "Heavy Rain",
+  "image": "https://media.rawg.io/media/games/0af/0af85e8edddfa55368e47c539914a220.jpg",
+  "released": "2010-02-17",
+  "genres": [
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 4",
+   "PlayStation 3"
+  ],
+  "metacritic": 80,
+  "rating": 4.12,
+  "ratings_count": 2492,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 3209,
+  "slug": "until-dawn",
+  "name": "Until Dawn",
+  "image": "https://media.rawg.io/media/games/d64/d6443375f9971152866ea76bff97d6d6.jpg",
+  "released": "2015-08-25",
+  "genres": [
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 4",
+   "PlayStation 3"
+  ],
+  "metacritic": 79,
+  "rating": 4.1,
+  "ratings_count": 1757,
+  "playtime": 14
+ },
+ {
+  "rawg_id": 1682,
+  "slug": "the-wolf-among-us",
+  "name": "The Wolf Among Us",
+  "image": "https://media.rawg.io/media/games/be0/be084b850302abe81675bc4ffc08a0d0.jpg",
+  "released": "2013-10-10",
+  "genres": [
+   "Adventure"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 4",
+   "Xbox One",
+   "iOS",
+   "Android",
+   "macOS",
+   "Xbox 360",
+   "PS Vita"
+  ],
+  "metacritic": 82,
+  "rating": 4.38,
+  "ratings_count": 2188,
+  "playtime": 9
+ },
+ {
+  "rawg_id": 362941,
+  "slug": "the-walking-dead-the-telltale-definitive-series",
+  "name": "The Walking Dead: The Telltale Definitive Series",
+  "image": "https://media.rawg.io/media/games/810/8101cb5bf4db5f85ca1b6fab14cab5ee.jpg",
+  "released": "2019-09-10",
+  "genres": [
+   "Adventure"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4"
+  ],
+  "metacritic": 84,
+  "rating": 4.34,
+  "ratings_count": 181,
+  "playtime": 4
+ },
+ {
+  "rawg_id": 4062,
+  "slug": "bioshock-infinite",
+  "name": "BioShock Infinite",
+  "image": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg",
+  "released": "2013-03-26",
+  "genres": [
+   "Shooter",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "Linux",
+   "Xbox 360",
+   "PlayStation 3"
+  ],
+  "metacritic": 94,
+  "rating": 4.38,
+  "ratings_count": 4187,
+  "playtime": 12
+ },
+ {
+  "rawg_id": 4286,
+  "slug": "bioshock",
+  "name": "BioShock",
+  "image": "https://media.rawg.io/media/games/bc0/bc06a29ceac58652b684deefe7d56099.jpg",
+  "released": "2007-08-21",
+  "genres": [
+   "Shooter",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "macOS",
+   "Xbox 360",
+   "PlayStation 3"
+  ],
+  "metacritic": 96,
+  "rating": 4.36,
+  "ratings_count": 3377,
+  "playtime": 3
+ },
+ {
+  "rawg_id": 10533,
+  "slug": "path-of-exile",
+  "name": "Path of Exile",
+  "image": "https://media.rawg.io/media/games/d0f/d0f91fe1d92332147e5db74e207cfc7a.jpg",
+  "released": "2013-10-23",
+  "genres": [
+   "Indie",
+   "Massively Multiplayer",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4"
+  ],
+  "metacritic": 86,
+  "rating": 3.65,
+  "ratings_count": 1648,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 9465,
+  "slug": "grim-dawn",
+  "name": "Grim Dawn",
+  "image": "https://media.rawg.io/media/games/920/92039cd19460532b76f6244b2bb3e4ac.jpg",
+  "released": "2016-02-25",
+  "genres": [
+   "Indie",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "Xbox Series S/X"
+  ],
+  "metacritic": 83,
+  "rating": 3.96,
+  "ratings_count": 579,
+  "playtime": 8
+ },
+ {
+  "rawg_id": 123,
+  "slug": "titan-quest",
+  "name": "Titan Quest",
+  "image": "https://media.rawg.io/media/games/910/910d547965a5c4928ca19112778a1b4f.jpg",
+  "released": "2006-06-26",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "iOS",
+   "Android"
+  ],
+  "metacritic": 69,
+  "rating": 3.91,
+  "ratings_count": 576,
+  "playtime": 1
+ },
+ {
+  "rawg_id": 17126,
+  "slug": "torchlight-ii",
+  "name": "Torchlight II",
+  "image": "https://media.rawg.io/media/games/c06/c06d88c35785c8003147cb53c84af033.jpg",
+  "released": "2012-09-20",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 88,
+  "rating": 3.83,
+  "ratings_count": 1075,
+  "playtime": 10
+ },
+ {
+  "rawg_id": 452649,
+  "slug": "resident-evil-village",
+  "name": "Resident Evil: Village",
+  "image": "https://media.rawg.io/media/games/6cc/6cc23249972a427f697a3d10eb57a820.jpg",
+  "released": "2021-05-07",
+  "genres": [
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch",
+   "iOS"
+  ],
+  "metacritic": 83,
+  "rating": 4.39,
+  "ratings_count": 1075,
+  "playtime": 15
+ },
+ {
+  "rawg_id": 58813,
+  "slug": "resident-evil-2-2019",
+  "name": "Resident Evil 2",
+  "image": "https://media.rawg.io/media/games/053/053fc543bf488349610f1ae2d0c1b51b.jpg",
+  "released": "2019-01-25",
+  "genres": [
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "macOS"
+  ],
+  "metacritic": 91,
+  "rating": 4.51,
+  "ratings_count": 2309,
+  "playtime": 11
+ },
+ {
+  "rawg_id": 46889,
+  "slug": "monster-hunter-world-2",
+  "name": "Monster Hunter: World",
+  "image": "https://media.rawg.io/media/games/21c/21cc15d233117c6809ec86870559e105.jpg",
+  "released": "2018-01-26",
+  "genres": [
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4"
+  ],
+  "metacritic": 89,
+  "rating": 4.01,
+  "ratings_count": 1641,
+  "playtime": 15
+ },
+ {
+  "rawg_id": 494393,
+  "slug": "monster-hunter-rise",
+  "name": "Monster Hunter Rise",
+  "image": "https://media.rawg.io/media/games/dbb/dbba6100aae179b5f24052c9141d426d.jpg",
+  "released": "2021-03-26",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": 87,
+  "rating": 4.17,
+  "ratings_count": 183,
+  "playtime": 15
+ },
+ {
+  "rawg_id": 742771,
+  "slug": "street-fighter-6",
+  "name": "Street Fighter 6",
+  "image": "https://media.rawg.io/media/games/ce2/ce2463db40cec363f360c29ddcc56884.jpg",
+  "released": "2023-06-01",
+  "genres": [
+   "Adventure",
+   "Action",
+   "Fighting"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "PlayStation 4",
+   "Xbox Series S/X"
+  ],
+  "metacritic": null,
+  "rating": 4.03,
+  "ratings_count": 55,
+  "playtime": 17
+ },
+ {
+  "rawg_id": 274480,
+  "slug": "mortal-kombat-11",
+  "name": "Mortal Kombat 11",
+  "image": "https://media.rawg.io/media/games/eb5/eb514db62d397c64288160d5bd8fd67a.jpg",
+  "released": "2019-04-22",
+  "genres": [
+   "Adventure",
+   "Action",
+   "Fighting"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": 82,
+  "rating": 3.97,
+  "ratings_count": 1146,
+  "playtime": 9
+ },
+ {
+  "rawg_id": 23587,
+  "slug": "sonic-mania",
+  "name": "Sonic Mania",
+  "image": "https://media.rawg.io/media/games/bbf/bbf8d74ab64440ad76294cff2f4d9cfa.jpg",
+  "released": "2017-08-15",
+  "genres": [
+   "Casual",
+   "Platformer",
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch"
+  ],
+  "metacritic": 85,
+  "rating": 3.86,
+  "ratings_count": 858,
+  "playtime": 3
+ },
+ {
+  "rawg_id": 58133,
+  "slug": "spyro-reignited-trilogy",
+  "name": "Spyro Reignited Trilogy",
+  "image": "https://media.rawg.io/media/games/a50/a505bccdcfdc79970a93574c747f6e0d.jpg",
+  "released": "2018-11-13",
+  "genres": [
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch"
+  ],
+  "metacritic": 80,
+  "rating": 4.13,
+  "ratings_count": 544,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 51324,
+  "slug": "kingdom-hearts-iii",
+  "name": "Kingdom Hearts III",
+  "image": "https://media.rawg.io/media/games/968/968e6210715fd61237139e3caa193be0.jpg",
+  "released": "2019-01-25",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4"
+  ],
+  "metacritic": 82,
+  "rating": 3.86,
+  "ratings_count": 537,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 246478,
+  "slug": "fire-emblem-three-houses",
+  "name": "Fire Emblem: Three Houses",
+  "image": "https://media.rawg.io/media/games/530/53081dbd5003f990fa5312404ac3d71a.jpg",
+  "released": "2019-07-26",
+  "genres": [
+   "Strategy",
+   "RPG"
+  ],
+  "platforms": [
+   "Nintendo Switch"
+  ],
+  "metacritic": 89,
+  "rating": 4.35,
+  "ratings_count": 465,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 10073,
+  "slug": "divinity-original-sin-2",
+  "name": "Divinity: Original Sin 2",
+  "image": "https://media.rawg.io/media/games/424/424facd40f4eb1f2794fe4b4bb28a277.jpg",
+  "released": "2017-09-14",
+  "genres": [
+   "Strategy",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch"
+  ],
+  "metacritic": 95,
+  "rating": 4.38,
+  "ratings_count": 1692,
+  "playtime": 22
+ },
+ {
+  "rawg_id": 49874,
+  "slug": "pillars-of-eternity-ii-deadfire",
+  "name": "Pillars of Eternity II: Deadfire",
+  "image": "https://media.rawg.io/media/games/86b/86bea42bc14fb1f9cb76b44c4450cbab.jpg",
+  "released": "2018-05-07",
+  "genres": [
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 82,
+  "rating": 4.1,
+  "ratings_count": 310,
+  "playtime": 9
+ },
+ {
+  "rawg_id": 409575,
+  "slug": "pathfinder-wrath-of-the-righteous",
+  "name": "Pathfinder: Wrath of the Righteous",
+  "image": "https://media.rawg.io/media/games/a20/a203f3f5d667e04ce4a2c482c7be3a47.jpg",
+  "released": "2021-09-02",
+  "genres": [
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "macOS"
+  ],
+  "metacritic": 81,
+  "rating": 4.25,
+  "ratings_count": 141,
+  "playtime": 10
+ },
+ {
+  "rawg_id": 804753,
+  "slug": "dragons-dogma-2",
+  "name": "Dragon’s Dogma 2",
+  "image": "https://media.rawg.io/media/games/679/679d7a18e220025bdd83dff484d6ea64.jpg",
+  "released": "2024-03-21",
+  "genres": [
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox Series S/X"
+  ],
+  "metacritic": null,
+  "rating": 3.81,
+  "ratings_count": 93,
+  "playtime": 22
+ },
+ {
+  "rawg_id": 28172,
+  "slug": "kingdom-come-deliverance",
+  "name": "Kingdom Come: Deliverance",
+  "image": "https://media.rawg.io/media/games/d8f/d8f3b28fc747ed6f92943cdd33fb91b5.jpeg",
+  "released": "2018-02-13",
+  "genres": [
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4"
+  ],
+  "metacritic": 71,
+  "rating": 4.05,
+  "ratings_count": 1487,
+  "playtime": 10
+ },
+ {
+  "rawg_id": 58616,
+  "slug": "assassins-creed-odyssey",
+  "name": "Assassin's Creed Odyssey",
+  "image": "https://media.rawg.io/media/games/c6b/c6bd26767c1053fef2b10bb852943559.jpg",
+  "released": "2018-10-05",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch"
+  ],
+  "metacritic": 85,
+  "rating": 3.97,
+  "ratings_count": 2113,
+  "playtime": 31
+ },
+ {
+  "rawg_id": 437059,
+  "slug": "assassins-creed-valhalla",
+  "name": "Assassin's Creed Valhalla",
+  "image": "https://media.rawg.io/media/games/934/9346092ae11bf7582c883869468171cc.jpg",
+  "released": "2020-11-10",
+  "genres": [
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X"
+  ],
+  "metacritic": 82,
+  "rating": 3.67,
+  "ratings_count": 813,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 28568,
+  "slug": "assassins-creed-ii",
+  "name": "Assassin's Creed II",
+  "image": "https://media.rawg.io/media/games/1be/1bed7fae69d1004c09dfe1101d5a3a94.jpg",
+  "released": "2009-11-17",
+  "genres": [
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "macOS",
+   "Xbox 360",
+   "PlayStation 3"
+  ],
+  "metacritic": 89,
+  "rating": 4.43,
+  "ratings_count": 2994,
+  "playtime": 14
+ },
+ {
+  "rawg_id": 4161,
+  "slug": "far-cry-3",
+  "name": "Far Cry 3",
+  "image": "https://media.rawg.io/media/games/15c/15c95a4915f88a3e89c821526afe05fc.jpg",
+  "released": "2012-11-28",
+  "genres": [
+   "Shooter",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox 360",
+   "PlayStation 3"
+  ],
+  "metacritic": 88,
+  "rating": 4.26,
+  "ratings_count": 3019,
+  "playtime": 16
+ },
+ {
+  "rawg_id": 3192,
+  "slug": "metal-gear-solid-v-the-phantom-pain",
+  "name": "Metal Gear Solid V: The Phantom Pain",
+  "image": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg",
+  "released": "2015-09-01",
+  "genres": [
+   "Shooter",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox 360",
+   "PlayStation 3"
+  ],
+  "metacritic": 91,
+  "rating": 4.16,
+  "ratings_count": 2540,
+  "playtime": 22
+ },
+ {
+  "rawg_id": 28623,
+  "slug": "batman-arkham-city-2",
+  "name": "Batman: Arkham City",
+  "image": "https://media.rawg.io/media/games/b5a/b5a1226bfd971284a735a4a0969086b3.jpg",
+  "released": "2011-10-18",
+  "genres": [
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "macOS",
+   "Xbox 360",
+   "PlayStation 3"
+  ],
+  "metacritic": 94,
+  "rating": 4.4,
+  "ratings_count": 2194,
+  "playtime": 20
+ },
+ {
+  "rawg_id": 4491,
+  "slug": "shadow-of-the-colossus",
+  "name": "Shadow of the Colossus (2011)",
+  "image": "https://media.rawg.io/media/games/6ac/6ac602e70c837ababdf025e997391d9c.jpg",
+  "released": "2011-09-22",
+  "genres": [
+   "Action"
+  ],
+  "platforms": [
+   "PlayStation 3"
+  ],
+  "metacritic": 91,
+  "rating": 4.26,
+  "ratings_count": 1017,
+  "playtime": 3
+ },
+ {
+  "rawg_id": 2462,
+  "slug": "uncharted-4-a-thiefs-end",
+  "name": "Uncharted 4: A Thief’s End",
+  "image": "https://media.rawg.io/media/games/709/709bf81f874ce5d25d625b37b014cb63.jpg",
+  "released": "2016-05-10",
+  "genres": [
+   "Shooter",
+   "Action"
+  ],
+  "platforms": [
+   "PlayStation 5",
+   "PlayStation 4"
+  ],
+  "metacritic": 93,
+  "rating": 4.48,
+  "ratings_count": 3773,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 4101,
+  "slug": "bayonetta",
+  "name": "Bayonetta",
+  "image": "https://media.rawg.io/media/games/bee/bee483efadcf9d7e657e52184316a34e.jpg",
+  "released": "2009-06-23",
+  "genres": [
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 4",
+   "Xbox One",
+   "Nintendo Switch",
+   "Xbox 360",
+   "PlayStation 3",
+   "Wii U"
+  ],
+  "metacritic": 90,
+  "rating": 4.3,
+  "ratings_count": 1160,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 923,
+  "slug": "titanfall-2",
+  "name": "Titanfall 2",
+  "image": "https://media.rawg.io/media/games/569/56978b5a77f13aa2ec5d09ec81d01cad.jpg",
+  "released": "2016-10-28",
+  "genres": [
+   "Shooter",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4"
+  ],
+  "metacritic": 87,
+  "rating": 4.32,
+  "ratings_count": 2087,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 998,
+  "slug": "battlefield-1",
+  "name": "Battlefield 1",
+  "image": "https://media.rawg.io/media/games/998/9980c4296f311d8bcc5b451ca51e4fe1.jpg",
+  "released": "2016-10-21",
+  "genres": [
+   "Shooter",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4"
+  ],
+  "metacritic": 88,
+  "rating": 3.84,
+  "ratings_count": 1985,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 4527,
+  "slug": "modern-warfare-2",
+  "name": "Call of Duty: Modern Warfare 2",
+  "image": "https://media.rawg.io/media/games/9af/9af24c1886e2c7b52a4a2c65aa874638.jpg",
+  "released": "2009-11-10",
+  "genres": [
+   "Shooter"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "macOS",
+   "Xbox 360",
+   "PlayStation 3"
+  ],
+  "metacritic": 86,
+  "rating": 4.27,
+  "ratings_count": 2089,
+  "playtime": 22
+ },
+ {
+  "rawg_id": 793647,
+  "slug": "star-wars-jedi-survivor",
+  "name": "Star Wars Jedi: Survivor",
+  "image": "https://media.rawg.io/media/games/3e4/3e43e29ae126ef951842393f5ff7f33a.jpg",
+  "released": "2023-04-27",
+  "genres": [
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox Series S/X"
+  ],
+  "metacritic": null,
+  "rating": 4.22,
+  "ratings_count": 291,
+  "playtime": 17
+ },
+ {
+  "rawg_id": 257201,
+  "slug": "jedi-the-fallen-order",
+  "name": "Star Wars Jedi: Fallen Order",
+  "image": "https://media.rawg.io/media/games/559/559bc0768f656ad0c63c54b80a82d680.jpg",
+  "released": "2019-11-15",
+  "genres": [
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4"
+  ],
+  "metacritic": 80,
+  "rating": 4.13,
+  "ratings_count": 2297,
+  "playtime": 8
+ },
+ {
+  "rawg_id": 56184,
+  "slug": "resident-evil-4",
+  "name": "Resident Evil 4 (2005)",
+  "image": "https://media.rawg.io/media/games/fee/fee0100afd87b52bfbd33e26689fa26c.jpg",
+  "released": "2005-01-11",
+  "genres": [
+   "Shooter",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 4",
+   "iOS",
+   "Android",
+   "PlayStation 2",
+   "Wii",
+   "GameCube"
+  ],
+  "metacritic": 83,
+  "rating": 4.4,
+  "ratings_count": 1865,
+  "playtime": 5
+ },
+ {
+  "rawg_id": 388309,
+  "slug": "diablo-iv",
+  "name": "Diablo IV",
+  "image": "https://media.rawg.io/media/games/77d/77d51f8f4a07c3eecb0f8504027b1bf0.jpg",
+  "released": "2023-06-06",
+  "genres": [
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X"
+  ],
+  "metacritic": 90,
+  "rating": 3.73,
+  "ratings_count": 322,
+  "playtime": 13
+ },
+ {
+  "rawg_id": 850705,
+  "slug": "tekken-8",
+  "name": "Tekken 8",
+  "image": "https://media.rawg.io/media/games/ed3/ed3a5e9fab79022979de9ef420137f73.jpg",
+  "released": "2024-01-25",
+  "genres": [
+   "Action",
+   "Fighting"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox Series S/X"
+  ],
+  "metacritic": null,
+  "rating": 3.96,
+  "ratings_count": 72,
+  "playtime": 19
+ },
+ {
+  "rawg_id": 339958,
+  "slug": "persona-5-royal",
+  "name": "Persona 5 Royal",
+  "image": "https://media.rawg.io/media/games/a9c/a9c789951de65da545d51f664b4f2ce0.jpg",
+  "released": "2020-03-31",
+  "genres": [
+   "Adventure",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": 94,
+  "rating": 4.75,
+  "ratings_count": 542,
+  "playtime": 12
+ },
+ {
+  "rawg_id": 59155,
+  "slug": "astro-bot-rescue-mission",
+  "name": "Astro Bot Rescue Mission",
+  "image": "https://media.rawg.io/media/games/234/234bdec585c2eb952792bf7bde47d4d2.jpg",
+  "released": "2018-10-02",
+  "genres": [
+   "Adventure"
+  ],
+  "platforms": [
+   "PlayStation 4"
+  ],
+  "metacritic": 90,
+  "rating": 4.24,
+  "ratings_count": 163,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 58084,
+  "slug": "dragon-quest-xi",
+  "name": "DRAGON QUEST XI: Echoes of an Elusive Age",
+  "image": "https://media.rawg.io/media/games/e04/e041cc430f6b6681477580d3bcddf29f.jpg",
+  "released": "2017-07-29",
+  "genres": [
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch",
+   "Nintendo 3DS"
+  ],
+  "metacritic": 91,
+  "rating": 4.31,
+  "ratings_count": 377,
+  "playtime": 15
+ },
+ {
+  "rawg_id": 965470,
+  "slug": "counter-strike-2-2",
+  "name": "Counter-Strike 2",
+  "image": "https://media.rawg.io/media/games/ec4/ec4b02bdb3eb5c6212992c19bc05697e.jpg",
+  "released": "2023-09-27",
+  "genres": [
+   "Shooter"
+  ],
+  "platforms": [
+   "PC",
+   "Linux"
+  ],
+  "metacritic": null,
+  "rating": 3.6,
+  "ratings_count": 225,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 736257,
+  "slug": "xenoblade-chronicles-3",
+  "name": "Xenoblade Chronicles 3",
+  "image": "https://media.rawg.io/media/games/ae7/ae7cfc9a66232839112663899d2c8d8d.jpg",
+  "released": "2022-07-29",
+  "genres": [
+   "RPG"
+  ],
+  "platforms": [
+   "Nintendo Switch"
+  ],
+  "metacritic": null,
+  "rating": 4.33,
+  "ratings_count": 69,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 552923,
+  "slug": "total-war-warhammer-iii",
+  "name": "Total War: WARHAMMER III",
+  "image": "https://media.rawg.io/media/games/0fc/0fcb485572f6074c611521984a033a5c.jpg",
+  "released": "2022-02-17",
+  "genres": [
+   "Strategy",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "macOS",
+   "Linux"
+  ],
+  "metacritic": 85,
+  "rating": 4.03,
+  "ratings_count": 68,
+  "playtime": 17
+ },
+ {
+  "rawg_id": 962676,
+  "slug": "persona-3-reload",
+  "name": "Persona 3 Reload",
+  "image": "https://media.rawg.io/media/games/29a/29a78d7b6be61673c910d588bf188e2c.jpg",
+  "released": "2024-02-01",
+  "genres": [
+   "Strategy",
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X"
+  ],
+  "metacritic": null,
+  "rating": 4.37,
+  "ratings_count": 110,
+  "playtime": 29
+ },
+ {
+  "rawg_id": 452645,
+  "slug": "hitman-3",
+  "name": "Hitman 3",
+  "image": "https://media.rawg.io/media/games/126/126fbd5ceacddc6ad16fc96e50b1265b.jpg",
+  "released": "2021-01-20",
+  "genres": [
+   "Shooter",
+   "Adventure",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": 83,
+  "rating": 4.25,
+  "ratings_count": 369,
+  "playtime": 6
+ },
+ {
+  "rawg_id": 58617,
+  "slug": "borderlands-3",
+  "name": "Borderlands 3",
+  "image": "https://media.rawg.io/media/games/9f1/9f1891779cb20f44de93cef33b067e50.jpg",
+  "released": "2019-09-13",
+  "genres": [
+   "Shooter",
+   "Adventure",
+   "Action",
+   "RPG"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4",
+   "Xbox Series S/X",
+   "Nintendo Switch"
+  ],
+  "metacritic": 83,
+  "rating": 3.87,
+  "ratings_count": 980,
+  "playtime": 11
+ },
+ {
+  "rawg_id": 34,
+  "slug": "crash-bandicoot-n-sane-trilogy",
+  "name": "Crash Bandicoot N. Sane Trilogy",
+  "image": "https://media.rawg.io/media/games/444/4440f674e2bcb257e249a9ab595d8ab6.jpg",
+  "released": "2017-06-30",
+  "genres": [
+   "Platformer",
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox One",
+   "PlayStation 4",
+   "Nintendo Switch"
+  ],
+  "metacritic": 81,
+  "rating": 4.12,
+  "ratings_count": 645,
+  "playtime": 4
+ },
+ {
+  "rawg_id": 58755,
+  "slug": "devil-may-cry-5",
+  "name": "Devil May Cry 5",
+  "image": "https://media.rawg.io/media/games/9fb/9fbf956a16249def7625ab5dc3d09515.jpg",
+  "released": "2019-03-08",
+  "genres": [
+   "Action"
+  ],
+  "platforms": [
+   "PC",
+   "PlayStation 5",
+   "Xbox One",
+   "PlayStation 4"
+  ],
+  "metacritic": 88,
+  "rating": 4.25,
+  "ratings_count": 1547,
+  "playtime": 9
+ },
+ {
+  "rawg_id": 23760,
+  "slug": "bayonetta-2",
+  "name": "Bayonetta 2",
+  "image": "https://media.rawg.io/media/games/3d7/3d7c8e749b18cfc898c80016594981fe.jpg",
+  "released": "2014-09-20",
+  "genres": [
+   "Action"
+  ],
+  "platforms": [
+   "Nintendo Switch",
+   "Wii U"
+  ],
+  "metacritic": 92,
+  "rating": 4.36,
+  "ratings_count": 344,
+  "playtime": 0
+ },
+ {
+  "rawg_id": 28760,
+  "slug": "virtua-tennis-3",
+  "name": "Virtua Tennis 3",
+  "image": "https://media.rawg.io/media/screenshots/748/74857df33b87630bc5edec82febfa430.jpg",
+  "released": "2007-03-08",
+  "genres": [
+   "Sports"
+  ],
+  "platforms": [
+   "PC",
+   "Xbox 360",
+   "PlayStation 3",
+   "PSP"
+  ],
+  "metacritic": 80,
+  "rating": 4.1,
+  "ratings_count": 30,
+  "playtime": 1
+ }
+]
