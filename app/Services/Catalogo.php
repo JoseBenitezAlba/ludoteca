@@ -98,6 +98,10 @@ class Catalogo
                 }
             });
         }
+        if ($q === '') {
+            // explorando sin nombre: lo que no ha salido va en "Próximamente"
+            $query->where(fn ($w) => $w->whereNull('released')->orWhereDate('released', '<=', now()->toDateString()));
+        }
         if ($f['desde']) {
             $query->whereDate('released', '>=', $f['desde'].'-01-01');
         }
@@ -136,7 +140,7 @@ class Catalogo
             return null;
         }
 
-        $clave = 'rawg:v2:'.md5($q.json_encode($f).'|'.$pagina);
+        $clave = 'rawg:v3:'.now()->toDateString().md5($q.json_encode($f).'|'.$pagina);
         $resultados = Cache::get($clave);
         if ($resultados === null) {
             try {
@@ -160,8 +164,10 @@ class Catalogo
                 if ($f['p']) {
                     $params['platforms'] = implode(',', array_map(fn ($e) => self::PLATAFORMAS[$e][1], $f['p']));
                 }
-                if ($f['desde'] || $f['hasta']) {
-                    $params['dates'] = ($f['desde'] ?: 1970).'-01-01,'.($f['hasta'] ?: 2100).'-12-31';
+                $tope = now()->toDateString();
+                if ($f['desde'] || $f['hasta'] || $q === '') {
+                    $hasta = $f['hasta'] ? min($f['hasta'].'-12-31', $q === '' ? $tope : '9999') : ($q === '' ? $tope : '2100-12-31');
+                    $params['dates'] = ($f['desde'] ?: 1970).'-01-01,'.$hasta;
                 }
                 if ($f['mc']) {
                     $params['metacritic'] = $f['mc'].',100';
@@ -185,6 +191,54 @@ class Catalogo
             ->filter(fn ($g) => ! empty($g['background_image']))
             ->map(fn ($g) => $this->guardar($g))
             ->values();
+    }
+
+    /**
+     * Próximos lanzamientos (fecha futura), ordenados por fecha. La primera página mezcla
+     * los que ya tenemos guardados con los de RAWG.
+     *
+     * @return array{0: Collection<int, Game>, 1: bool, 2: bool} juegos, hay más, RAWG respondió
+     */
+    public function proximos(int $pagina = 1): array
+    {
+        $hoy = now()->toDateString();
+        $locales = $pagina === 1
+            ? Game::whereDate('released', '>', $hoy)->orderBy('released')->limit(40)->get()
+            : collect();
+
+        $hayMas = false;
+        $ok = false;
+        $remotos = collect();
+        if (config('services.rawg.key')) {
+            $clave = 'rawg:proximos:'.$hoy.':'.$pagina;
+            $r = Cache::get($clave);
+            if ($r === null) {
+                try {
+                    $resp = Http::timeout(10)->connectTimeout(3)->get(self::BASE.'/games', [
+                        'key' => config('services.rawg.key'),
+                        'dates' => now()->addDay()->toDateString().','.now()->addYears(2)->toDateString(),
+                        'ordering' => 'released',
+                        'page_size' => 40,
+                        'page' => $pagina,
+                    ]);
+                    if ($resp->successful()) {
+                        $r = ['items' => $resp->json('results') ?? [], 'mas' => ! empty($resp->json('next'))];
+                        Cache::put($clave, $r, now()->addHours(6));
+                    }
+                } catch (\Throwable $e) {
+                    Log::info('RAWG próximos no responde: '.$e->getMessage());
+                }
+            }
+            if ($r !== null) {
+                $ok = true;
+                $hayMas = (bool) $r['mas'];
+                $remotos = collect($r['items'])->filter(fn ($g) => ! empty($g['background_image']))->map(fn ($g) => $this->guardar($g));
+            }
+        }
+
+        $juegos = $locales->concat($remotos)->unique('id')->filter(fn ($g) => $g->sinLanzar())->sortBy('released')->values();
+
+        return [$juegos, $hayMas, $ok];
     }
 
     /** Completa descripcion y desarrolladores la primera vez que se abre un juego. */
