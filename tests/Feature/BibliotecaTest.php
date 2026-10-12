@@ -43,6 +43,20 @@ class BibliotecaTest extends TestCase
             ->assertOk()->assertJsonCount(1, 'items')->assertJsonPath('items.0.name', 'Viejo');
     }
 
+    public function test_juego_sin_lanzar_solo_admite_pendiente(): void
+    {
+        $user = \App\Models\User::factory()->create();
+        $futuro = $this->juego('Juego futuro', ['released' => now()->addMonths(3)->toDateString()]);
+
+        $this->actingAs($user)->post(route('juego.guardar', $futuro), ['status' => 'completed', 'rating' => 9])
+            ->assertSessionHasErrors('status');
+        $this->assertDatabaseCount('entries', 0);
+
+        $this->actingAs($user)->post(route('juego.guardar', $futuro), ['status' => 'backlog', 'rating' => 9])
+            ->assertRedirect(route('biblioteca'));
+        $this->assertDatabaseHas('entries', ['game_id' => $futuro->id, 'status' => 'backlog', 'rating' => null]);
+    }
+
     public function test_si_rawg_falla_la_busqueda_remota_no_rompe(): void
     {
         config(['services.rawg.key' => 'x']);
