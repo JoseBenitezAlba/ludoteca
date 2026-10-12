@@ -44,7 +44,7 @@ class JuegoController extends Controller
 
         Entry::updateOrCreate(['user_id' => auth()->id(), 'game_id' => $game->id], $datos);
 
-        return back()->with('ok', 'Guardado en tu biblioteca.');
+        return redirect()->route('biblioteca')->with('ok', '«'.$game->name.'» guardado en tu biblioteca.');
     }
 
     public function quitar(Game $game)
