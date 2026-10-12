@@ -41,7 +41,7 @@
             @endforeach
         </div>
         @if ($sinSalir)
-            <p class="text-xs text-muted">Sale el {{ $game->released->translatedFormat('j \d\e F \d\e Y') }}. Hasta entonces solo puedes ponerlo en Pendiente.</p>
+            <p class="text-xs text-muted">Sale el {{ $game->released->locale('es')->translatedFormat('j \d\e F \d\e Y') }}. Hasta entonces solo puedes ponerlo en Pendiente.</p>
         @endif
         @error('status')<p class="text-sm text-red-400">{{ $message }}</p>@enderror
 
