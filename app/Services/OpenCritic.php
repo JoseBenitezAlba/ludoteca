@@ -29,6 +29,12 @@ class OpenCritic
         return Game::where('opencritic_checked_at', '>=', now()->startOfDay())->count();
     }
 
+    /** Búsquedas que dice la API que quedan hoy (la última cifra conocida; 99 si aún no la sabemos). */
+    private function restantes(): int
+    {
+        return (int) Cache::get('opencritic-restantes', 99);
+    }
+
     /** Juegos que merece la pena consultar: ya han salido y no tienen Metacritic. */
     public function pendiente(Game $g): bool
     {
@@ -42,7 +48,7 @@ class OpenCritic
     /** Para la ficha: consulta si queda cupo hoy. */
     public function completar(Game $g): void
     {
-        if ($this->pendiente($g) && $this->usadasHoy() < self::LIMITE_DIA) {
+        if ($this->pendiente($g) && $this->usadasHoy() < self::LIMITE_DIA && $this->restantes() > 1) {
             $this->consultar($g);
         }
     }
@@ -50,7 +56,7 @@ class OpenCritic
     /** Relleno automático: el juego reciente más popular que falte, si queda cupo de relleno. */
     public function rellenarUno(): void
     {
-        if (! $this->activo() || $this->usadasHoy() >= self::LIMITE_RELLENO) {
+        if (! $this->activo() || $this->usadasHoy() >= self::LIMITE_RELLENO || $this->restantes() <= 8) {
             return;
         }
         $lock = Cache::lock('opencritic-relleno', 30);
@@ -84,6 +90,10 @@ class OpenCritic
                 Cache::put('opencritic-pausa', 1, now()->endOfDay());
 
                 return;
+            }
+            if ($r->header('x-ratelimit-searches-remaining') !== '') {
+                $seg = max(60, (int) $r->header('x-ratelimit-searches-reset'));
+                Cache::put('opencritic-restantes', (int) $r->header('x-ratelimit-searches-remaining'), now()->addSeconds($seg));
             }
             if (! $r->successful()) {
                 return; // error temporal: no lo marcamos como comprobado
