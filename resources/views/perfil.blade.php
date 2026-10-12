@@ -16,7 +16,7 @@
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
         <div class="card p-4"><p class="text-3xl font-extrabold">{{ $stats['total'] }}</p><p class="text-xs text-muted">Juegos</p></div>
-        <div class="card p-4"><p class="text-3xl font-extrabold">{{ number_format($stats['horas'], 0, ',', '.') }}<span class="text-base text-muted"> h</span></p><p class="text-xs text-muted">Horas{{ $stats['horas_estimadas'] ? ' (algunas estimadas)' : '' }}</p></div>
+        <a href="{{ route('perfil.detalle', [$user, 'tipo' => 'horas']) }}" class="card p-4 block"><p class="text-3xl font-extrabold">{{ number_format($stats['horas'], 0, ',', '.') }}<span class="text-base text-muted"> h</span></p><p class="text-xs text-muted">Horas{{ $stats['horas_estimadas'] ? ' (algunas estimadas)' : '' }} ›</p></a>
         <div class="card p-4"><p class="text-3xl font-extrabold">{{ $stats['media'] ? number_format($stats['media'], 2, ',', '') : '–' }}</p><p class="text-xs text-muted">Nota media /5 · {{ $stats['valoradas'] }} valorados</p></div>
         <div class="card p-4"><p class="text-3xl font-extrabold">{{ $stats['tasa_final'] !== null ? $stats['tasa_final'].'%' : '–' }}</p><p class="text-xs text-muted">Los termina (vs. abandona)</p></div>
     </div>
@@ -31,7 +31,7 @@
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 text-sm">
             @foreach (\App\Models\Entry::STATUSES as $k => $label)
-                <a href="{{ $propio ? route('biblioteca', ['estado' => $k]) : '#' }}" class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full" style="background: {{ $colores[$k] }}"></span>{{ $label }} <b>{{ $stats['por_estado'][$k] }}</b></a>
+                <a href="{{ route('perfil.detalle', [$user, 'tipo' => 'estado', 'valor' => $k]) }}" class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full" style="background: {{ $colores[$k] }}"></span>{{ $label }} <b>{{ $stats['por_estado'][$k] }}</b></a>
             @endforeach
         </div>
     </section>
@@ -41,10 +41,10 @@
             <h2 class="h-section mb-3">Distribución de notas</h2>
             <div class="flex items-end gap-1.5 h-32">
                 @foreach ($stats['distribucion'] as $nota => $n)
-                    <div class="flex-1 flex flex-col items-center justify-end h-full">
+                    <a @if ($n) href="{{ route('perfil.detalle', [$user, 'tipo' => 'nota', 'valor' => $nota]) }}" @endif class="flex-1 flex flex-col items-center justify-end h-full">
                         <span class="text-[10px] text-muted mb-1">{{ $n ?: '' }}</span>
                         <div class="w-full rounded-t-md" style="height: {{ $n ? max(6, $n / $maxDist * 100) : 3 }}%; background: {{ $n ? 'linear-gradient(to top,#6366f1,#a78bfa)' : '#272d40' }}"></div>
-                    </div>
+                    </a>
                 @endforeach
             </div>
             <div class="flex gap-1.5 mt-1">@foreach ($stats['distribucion'] as $nota => $n)<span class="flex-1 text-center text-[10px] text-muted">{{ $nota % 2 ? '' : $nota / 2 }}</span>@endforeach</div>
@@ -55,10 +55,10 @@
             <h2 class="h-section mb-3">Géneros más jugados</h2>
             <div class="space-y-2">
                 @foreach ($stats['generos'] as $g => $n)
-                    <div>
-                        <div class="flex justify-between text-sm mb-1"><span>{{ $g }}</span><span class="text-muted">{{ $n }}</span></div>
+                    <a href="{{ route('perfil.detalle', [$user, 'tipo' => 'genero', 'valor' => $g]) }}" class="block">
+                        <div class="flex justify-between text-sm mb-1"><span>{{ $g }}</span><span class="text-muted">{{ $n }} ›</span></div>
                         <div class="h-2 rounded-full bg-surface-2"><div class="h-2 rounded-full" style="width: {{ $n / $maxGen * 100 }}%; background: linear-gradient(90deg,#8b5cf6,#22d3ee)"></div></div>
-                    </div>
+                    </a>
                 @endforeach
             </div>
         </section>
@@ -70,7 +70,7 @@
             <h2 class="h-section mb-3">Juegos terminados por año</h2>
             <div class="space-y-2">
                 @foreach ($stats['por_anio'] as $anio => $n)
-                    <div class="flex items-center gap-3 text-sm"><span class="w-10 text-muted">{{ $anio }}</span><div class="flex-1 h-5 rounded-md bg-surface-2"><div class="h-5 rounded-md bg-completed/80 text-[11px] text-bg font-bold pl-2 leading-5" style="width: {{ max(8, $n / $maxAnio * 100) }}%">{{ $n }}</div></div></div>
+                    <a href="{{ route('perfil.detalle', [$user, 'tipo' => 'anio', 'valor' => $anio]) }}" class="flex items-center gap-3 text-sm"><span class="w-10 text-muted">{{ $anio }}</span><div class="flex-1 h-5 rounded-md bg-surface-2"><div class="h-5 rounded-md bg-completed/80 text-[11px] text-bg font-bold pl-2 leading-5" style="width: {{ max(8, $n / $maxAnio * 100) }}%">{{ $n }}</div></div></a>
                 @endforeach
             </div>
         </section>
@@ -78,10 +78,21 @@
         @if ($stats['plataformas'])
         <section class="card p-4">
             <h2 class="h-section mb-3">Plataformas</h2>
-            <div class="flex flex-wrap gap-2">@foreach ($stats['plataformas'] as $p => $n)<span class="chip !text-sm bg-surface-2 border border-line">{{ $p }} <b class="ml-1.5">{{ $n }}</b></span>@endforeach</div>
+            <div class="flex flex-wrap gap-2">@foreach ($stats['plataformas'] as $p => $n)<a href="{{ route('perfil.detalle', [$user, 'tipo' => 'plataforma', 'valor' => $p]) }}" class="chip !text-sm bg-surface-2 border border-line">{{ $p }} <b class="ml-1.5">{{ $n }}</b></a>@endforeach</div>
         </section>
         @endif
     </div>
+
+    @if ($stats['top_horas']->isNotEmpty())
+    <section class="card p-4 mb-4">
+        <div class="flex justify-between items-baseline mb-3"><h2 class="h-section">Horas por juego</h2><a href="{{ route('perfil.detalle', [$user, 'tipo' => 'horas']) }}" class="text-xs text-accent">Ver todos ›</a></div>
+        <div class="space-y-2">
+            @foreach ($stats['top_horas'] as $e)
+                <a href="{{ route('juego', $e->game) }}" class="flex items-center justify-between text-sm"><span class="truncate pr-3">{{ $e->game->name }}</span><span class="text-muted shrink-0">{{ rtrim(rtrim(number_format($e->hours ?: $e->game->playtime, 1, ',', ''), '0'), ',') }} h{{ $e->hours ? '' : ' (est.)' }}</span></a>
+            @endforeach
+        </div>
+    </section>
+    @endif
 
     @if ($stats['mejores']->isNotEmpty())
     <section class="mb-4">
