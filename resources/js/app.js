@@ -112,7 +112,8 @@ Alpine.data('buscador', (inicial = '') => ({
         this.cargandoRemoto = true;
         pedir('local').then((d) => {
             if (id !== this.id) return;
-            this.items = this.ordenados(d.items);
+            const locales = new Set(d.items.map((i) => i.slug));
+            this.items = this.ordenados([...d.items, ...this.items.filter((i) => !locales.has(i.slug))]);
             this.mas.local = !!d.more;
             this.buscado = true;
         }).catch(() => {});
