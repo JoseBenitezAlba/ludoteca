@@ -42,6 +42,13 @@ class JuegoController extends Controller
         ]);
         $datos['favorite'] = (bool) ($datos['favorite'] ?? false);
 
+        if ($game->sinLanzar()) {
+            if ($datos['status'] !== 'backlog') {
+                return back()->withInput()->withErrors(['status' => 'Este juego aún no ha salido: solo puedes ponerlo en Pendiente.']);
+            }
+            $datos = array_merge($datos, ['rating' => null, 'hours' => null, 'finished_at' => null]);
+        }
+
         Entry::updateOrCreate(['user_id' => auth()->id(), 'game_id' => $game->id], $datos);
 
         return redirect()->route('biblioteca')->with('ok', '«'.$game->name.'» guardado en tu biblioteca.');
