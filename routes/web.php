@@ -20,6 +20,7 @@ Route::get('/proximamente', ProximamenteController::class)->name('proximamente')
 Route::get('/api/sorprende', SorprendeController::class)->middleware('throttle:30,1');
 Route::get('/juegos/{game}', [JuegoController::class, 'show'])->name('juego');
 Route::get('/u/{user}', [PerfilController::class, 'show'])->name('perfil');
+Route::get('/u/{user}/detalle', [PerfilController::class, 'detalle'])->name('perfil.detalle');
 Route::get('/listas/{lista}', [ListaController::class, 'show'])->name('listas.show');
 
 Route::middleware('guest')->group(function () {
