@@ -109,11 +109,11 @@ class Catalogo
             $query->whereDate('released', '<=', $f['hasta'].'-12-31');
         }
         if ($f['mc']) {
-            $query->where('metacritic', '>=', $f['mc']);
+            $query->whereRaw('coalesce(metacritic, opencritic_score) >= ?', [$f['mc']]);
         }
 
         match ($f['o']) {
-            'valoracion' => $query->orderByRaw('metacritic is null')->orderByDesc('metacritic')->orderByDesc('rawg_rating'),
+            'valoracion' => $query->orderByRaw('coalesce(metacritic, opencritic_score) is null')->orderByRaw('coalesce(metacritic, opencritic_score) desc')->orderByDesc('ratings_count'),
             'anio' => $query->orderByRaw('released is null')->orderByDesc('released'),
             'nombre' => $query->orderBy('name'),
             default => $query->orderByDesc('ratings_count'),
