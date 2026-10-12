@@ -156,7 +156,9 @@ class Catalogo
                     $params['ordering'] = '-added';
                 }
                 if ($f['o']) {
-                    $params['ordering'] = ['valoracion' => '-metacritic', 'anio' => '-released', 'nombre' => 'name'][$f['o']];
+                    $reciente = ($f['desde'] && $f['desde'] >= 2024) || ($f['hasta'] && $f['hasta'] >= 2024);
+                    // desde 2024 RAWG no trae Metacritic: pedimos los más populares y se ordenan por nota de la crítica
+                    $params['ordering'] = ['valoracion' => $reciente ? '-added' : '-metacritic', 'anio' => '-released', 'nombre' => 'name'][$f['o']];
                 }
                 if ($f['g']) {
                     $params['genres'] = implode(',', array_map(fn ($e) => self::GENEROS[$e][1], $f['g']));
