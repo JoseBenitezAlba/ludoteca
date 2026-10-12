@@ -8,6 +8,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\JuegoController;
 use App\Http\Controllers\ListaController;
 use App\Http\Controllers\PerfilController;
+use App\Http\Controllers\SorprendeController;
 use App\Http\Controllers\ProximamenteController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,6 +17,7 @@ Route::get('/buscar', [BuscarController::class, 'index'])->name('buscar');
 Route::get('/api/buscar', [BuscarController::class, 'api'])->middleware('throttle:90,1');
 Route::get('/descargar', DescargaController::class)->name('descargar');
 Route::get('/proximamente', ProximamenteController::class)->name('proximamente');
+Route::get('/api/sorprende', SorprendeController::class)->middleware('throttle:30,1');
 Route::get('/juegos/{game}', [JuegoController::class, 'show'])->name('juego');
 Route::get('/u/{user}', [PerfilController::class, 'show'])->name('perfil');
 Route::get('/listas/{lista}', [ListaController::class, 'show'])->name('listas.show');
