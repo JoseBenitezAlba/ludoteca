@@ -36,6 +36,7 @@ jobs:
           }
           JSON
           echo '<!doctype html><title>Ludoteca</title><body style="background:#0b0d13">' > www/index.html
+          sudo apt-get install -y imagemagick
           npx cap add android
           npx cap sync android
           for d in mdpi:48 hdpi:72 xhdpi:96 xxhdpi:144 xxxhdpi:192; do
