@@ -43,6 +43,12 @@ class Game extends Model
             : $this->image;
     }
 
+    /** Todavía no ha salido: fecha de lanzamiento futura. */
+    public function sinLanzar(): bool
+    {
+        return $this->released !== null && $this->released->isFuture();
+    }
+
     public function year(): ?int
     {
         return $this->released?->year;
