@@ -33,13 +33,15 @@ class AuthController extends Controller
 
     public function registrar(Request $request)
     {
+        $request->merge(['username' => mb_strtolower(trim((string) $request->input('username')))]);
+
         $datos = $request->validate([
             'name' => 'required|string|max:60',
             'username' => ['required', 'string', 'min:3', 'max:20', 'regex:/^[a-z0-9_]+$/', 'unique:users,username'],
             'email' => 'required|email|unique:users,email',
             'password' => 'required|string|min:8',
         ], [
-            'username.regex' => 'Solo minúsculas, números y guion bajo.',
+            'username.regex' => 'Solo letras, números y guion bajo.',
             'username.unique' => 'Ese usuario ya existe.',
             'email.unique' => 'Ya hay una cuenta con ese email.',
             'password.min' => 'Mínimo 8 caracteres.',
