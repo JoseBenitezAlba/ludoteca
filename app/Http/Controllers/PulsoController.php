@@ -7,10 +7,11 @@ class PulsoController extends Controller
     /** Sirve el APK de Pulso desde la propia web (descarga directa, con tamaño conocido). */
     public function __invoke()
     {
-        $ruta = storage_path('app/pulso.apk');
+        $origen = resource_path('apk/pulso.b64');
+        $ruta = storage_path('app/pulso-'.substr(md5_file($origen), 0, 10).'.apk');
         if (! is_file($ruta) || filesize($ruta) < 1000) {
             @mkdir(dirname($ruta), 0775, true);
-            file_put_contents($ruta, base64_decode(file_get_contents(resource_path('apk/pulso.b64'))));
+            file_put_contents($ruta, base64_decode(file_get_contents($origen)));
         }
 
         return response()->download($ruta, 'pulso.apk', [
