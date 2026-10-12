@@ -20,8 +20,18 @@
             <p class="text-[11px] text-muted">RAWG /5<br>{{ number_format($game->ratings_count, 0, ',', '.') }} votos</p>
         </div>
         <div class="card py-3">
-            <p class="text-2xl font-extrabold">{{ $game->metacritic ?? '–' }}</p>
-            <p class="text-[11px] text-muted">Metacritic<br>&nbsp;</p>
+            @if ($game->metacritic !== null)
+                <p class="text-2xl font-extrabold">{{ $game->metacritic }}</p>
+                <p class="text-[11px] text-muted">Metacritic<br>&nbsp;</p>
+            @elseif ($game->opencritic_score !== null)
+                <a href="{{ $game->opencritic_url }}" target="_blank" rel="noopener" class="block">
+                    <p class="text-2xl font-extrabold">{{ $game->opencritic_score }}</p>
+                    <p class="text-[11px] text-muted">OpenCritic<br><span class="underline">ver críticas</span></p>
+                </a>
+            @else
+                <p class="text-2xl font-extrabold text-muted">–</p>
+                <p class="text-[11px] text-muted">Nota de la crítica<br>sin datos</p>
+            @endif
         </div>
     </div>
 
