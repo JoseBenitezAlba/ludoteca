@@ -53,7 +53,7 @@ Alpine.data('buscador', (inicial = '') => ({
     ordenados(lista) {
         const num = (v, d) => (v === null || v === undefined ? d : v);
         const por = {
-            valoracion: (a, b) => num(b.mc, -1) - num(a.mc, -1) || num(b.rating, -1) - num(a.rating, -1),
+            valoracion: (a, b) => num(b.mc, -1) - num(a.mc, -1),
             anio: (a, b) => (b.date || '').localeCompare(a.date || ''),
             nombre: (a, b) => a.name.localeCompare(b.name, 'es'),
         }[this.o];
