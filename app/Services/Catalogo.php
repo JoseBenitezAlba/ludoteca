@@ -140,7 +140,7 @@ class Catalogo
             return null;
         }
 
-        $clave = 'rawg:v3:'.now()->toDateString().md5($q.json_encode($f).'|'.$pagina);
+        $clave = 'rawg:v4:'.now()->toDateString().md5($q.json_encode($f).'|'.$pagina);
         $resultados = Cache::get($clave);
         if ($resultados === null) {
             try {
