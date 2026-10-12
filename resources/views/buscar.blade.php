@@ -73,7 +73,11 @@
             <button type="button" @click="cargarMas()" :disabled="cargandoMas" class="btn-ghost w-full" x-text="cargandoMas ? 'Cargando…' : 'Cargar más juegos'"></button>
         </div>
 
-        <p x-show="buscado && !items.length && !cargandoRemoto" x-cloak class="text-center text-muted mt-10">Sin resultados para «<span x-text="q"></span>».</p>
+        <div x-show="buscado && !items.length && !cargandoRemoto" x-cloak class="text-center text-muted mt-10 space-y-2">
+            <p x-show="q.trim()">Sin resultados para «<span x-text="q"></span>».</p>
+            <p x-show="!q.trim()">Ningún juego con esos filtros.</p>
+            <p x-show="f.mc && (f.desde >= 2024 || f.hasta >= 2024)" class="text-xs">Ojo: el catálogo casi no tiene nota de Metacritic en los juegos de 2024 en adelante. Prueba sin Metacritic o con años anteriores.</p>
+        </div>
         <p x-show="!buscado && q.length < 2 && !activos" class="text-center text-muted mt-10">Escribe al menos 2 letras o elige un filtro. Los resultados guardados salen al instante.</p>
     </div>
 </x-layout>
