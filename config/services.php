@@ -35,6 +35,10 @@ return [
         ],
     ],
 
+    'opencritic' => [
+        'key' => env('OPENCRITIC_KEY'),
+    ],
+
     'rawg' => [
         'key' => env('RAWG_API_KEY'),
     ],
